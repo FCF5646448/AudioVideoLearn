@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1919D83022B23D3100CE94A3 /* DefaultHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1919D82F22B23D3100CE94A3 /* DefaultHeader.swift */; };
 		192132C722A8EC3200A1069A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192132C622A8EC3200A1069A /* AppDelegate.swift */; };
 		192132C922A8EC3200A1069A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192132C822A8EC3200A1069A /* ViewController.swift */; };
 		192132CC22A8EC3200A1069A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 192132CA22A8EC3200A1069A /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1919D82F22B23D3100CE94A3 /* DefaultHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultHeader.swift; sourceTree = "<group>"; };
 		192132C322A8EC3200A1069A /* Avplay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Avplay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		192132C622A8EC3200A1069A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		192132C822A8EC3200A1069A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 		192132D822A8ECA000A1069A /* player */ = {
 			isa = PBXGroup;
 			children = (
+				1919D82F22B23D3100CE94A3 /* DefaultHeader.swift */,
 				192132D922A8F20D00A1069A /* FCFAVPlayerView.swift */,
 				192132DF22A916DD00A1069A /* VideoCustomLayer.swift */,
 				192132DD22A9155F00A1069A /* Playsets.xcassets */,
@@ -154,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				192132E022A916DD00A1069A /* VideoCustomLayer.swift in Sources */,
+				1919D83022B23D3100CE94A3 /* DefaultHeader.swift in Sources */,
 				192132C922A8EC3200A1069A /* ViewController.swift in Sources */,
 				192132C722A8EC3200A1069A /* AppDelegate.swift in Sources */,
 				192132DA22A8F20D00A1069A /* FCFAVPlayerView.swift in Sources */,

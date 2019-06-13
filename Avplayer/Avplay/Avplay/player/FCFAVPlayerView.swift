@@ -43,12 +43,22 @@ import MediaPlayer //主要是为了获取当前音量
         return layer
     }()
     
+    lazy var customLayer:VideoCustomLayer = {
+        let v = VideoCustomLayer(frame: self.bounds)
+        v.delegate = self
+        return v
+    }()
     
-    var playing:Bool = false
+    var playing:Bool = false {
+        didSet{
+            self.customLayer.playing = playing
+        }
+    }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.frame = frame
+        initUI()
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -63,12 +73,25 @@ import MediaPlayer //主要是为了获取当前音量
 }
 
 extension FCFAVPlayerView {
+    func closePlay() {
+        self.avplayer.pause()
+        self.customLayer.timeInvalidate()
+    }
+}
+
+extension FCFAVPlayerView {
+    
+    func initUI() {
+        self.backgroundColor = UIColor.black.withAlphaComponent(0.5)
+        self.addSubview(self.customLayer)
+    }
+    
     func updateUI() {
         if self.url != nil {
             self.avplaylayer.frame = bounds
             layer.insertSublayer(avplaylayer, at: 0)
             self.avplayer.play()
-            
+            self.customLayer.beginTime()
             //
         }
     }
@@ -91,6 +114,46 @@ extension FCFAVPlayerView {
     }
 }
 
+extension FCFAVPlayerView : VideoCustomLayerDelegate {
+    //触摸
+    func touchesBeganWithPoint(view:VideoCustomLayer,point:CGPoint?) {
+        
+    }
+    func touchesEndedWithPoint(view:VideoCustomLayer,point:CGPoint?) {
+        
+    }
+    func touchesMovedWithPoint(view:VideoCustomLayer,point:CGPoint?) {
+        
+    }
+    //滑块
+    func sliderTouchUpOut(view:VideoCustomLayer,value: Float) {
+        let duration = value*Float(CMTimeGetSeconds(self.avplayer.currentItem!.duration))
+        let seekTime = CMTimeMake(value: Int64(duration), timescale: 1)
+        self.avplayer.seek(to: seekTime) {[weak self] (b) in
+            guard let `self` = self else {return}
+            self.customLayer.sliding = false
+        }
+    }
+    
+    func bottomToolPlayBtnAction(view:VideoCustomLayer,play:Bool) {
+        if play {
+            self.avplayer.play()
+            self.playing = true
+        }else{
+            self.avplayer.pause()
+            self.playing = false
+        }
+    }
+    func bottomToolFullScreenBtnAction(view:VideoCustomLayer,fullScreen:Bool) {
+        
+    }
+    func play(view:VideoCustomLayer)->(avplayTotleTime:TimeInterval,avplayCurrenttime:TimeInterval) {
+        let currentTime = CMTimeGetSeconds(self.avplayer.currentTime())
+        //总时长
+        let totalTime = TimeInterval(self.playerItem.duration.value )/TimeInterval(self.playerItem.duration.timescale )
+        return (totalTime,currentTime)
+    }
+}
 
 
 
