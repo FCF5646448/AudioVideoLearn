@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "OpenGLES_VC.h"
 
 @interface ViewController ()
 
@@ -16,8 +17,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.
     // Do any additional setup after loading the view.
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [super touchesBegan:touches withEvent:event];
+    
+    OpenGLES_VC * vc = [OpenGLES_VC new];
+    
+    [self presentViewController:vc animated:true completion:nil];
+}
 
 @end

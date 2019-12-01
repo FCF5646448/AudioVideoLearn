@@ -1,5 +1,7 @@
 ### 编程实践
 
+注：项目只适用于iOS13之前
+
 #### 名词解析：
 GPU ：图像处理单元
 RAM ：随机存取存储器
@@ -40,11 +42,23 @@ RAM ：随机存取存储器
 
         
         
-        
-        
-        
 
 #### 2、iOS 中的OpenGL ES基础
-1、
+Core Animation 是建立在OpenGL ES之上用于创建并管理帧缓存和渲染缓存共享内存的工作。
+1、一个iOS应用由应用‘层’和操作系统提供的层混合起来显示外观。比如顶部状态栏是有操作系统生成和控制的层。
+
+**Cocoa Touch** 应用框架：
+Cocoa Touch提供了iOS应用的基础结构。基本上所有的组件（包括对硬件的访问：键盘、触摸事件）都是不需要程序员干预的。大部分情况下，只有应用委托（application delegate）和根视图控制器（root view controller）由程序员干预。
+* **UIApplication**：每个应用都包含一个单一的UIApplication实例。它提供了应用和iOS系统之间的双向通信。应用向iOS系统请求服务（比如显示方向），系统为应用提供信息。UIApplication会与一个或多个UIWindow实例通信，还会与一个用于路由用户事件到正确对象的委托delegate通信。
+* **Appdelegate**：就是UIApplication的委托，主要用来处理关键信息的消息。比如说接收应用运行环境的所有改变，包括应用启动、结束这些信息。
+* **UIWindow**：一个应用至少有一个自动创建的覆盖整个屏幕的UIWindow实例。同时也可能其他UIWindow来展示警告和状态信息。UIWindow会包含一个或多个用于展示窗口图形内容的UIView实例。UIWindow的一个重要作用是从UIApplication实例接收用户的事件，然后根据实际情况把事件发送给正确的UIView实例（iOS事件响应流程）。
+* **Root View Controller**：每个窗口UIWindow都有一个可选的根视图控制器。视图控制器指定填充整个窗口的UIView实例。**GLKViewController**是支持OpenGL ES特有的行为和动画计时时的UIViewController的内建子类。
+* **GLKView**：它是UIView的内建子类。GKLView相关的GLKViewController实例是视图的委托并接收当视图需要重绘时的消息。
+
+
+
+
+
+
 
 
