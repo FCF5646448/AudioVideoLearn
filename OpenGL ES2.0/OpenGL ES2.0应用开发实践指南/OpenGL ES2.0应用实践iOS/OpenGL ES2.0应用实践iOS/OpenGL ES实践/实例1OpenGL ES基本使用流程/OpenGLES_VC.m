@@ -10,7 +10,7 @@
 
 
 typedef struct {
-    GLKVector3 positionCoords;
+    GLKVector3 positionCoords; //三角顶点坐标
 }SceneVertex;
 
 @interface OpenGLES_VC ()

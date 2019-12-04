@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "DF71DC26-D680-4D1C-AD35-3B835D695E94"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3CFE9331-59A2-437C-9698-7175EF9E5796"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OpenGL ES2.0&#x5e94;&#x7528;&#x5b9e;&#x8df5;iOS/OpenGL ES&#x5b9e;&#x8df5;/&#x5b9e;&#x4f8b;2OpenGL ES&#x7eb9;&#x7406;&#x5b66;&#x4e60;/OpenGL_ES_VC02.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "-glkView:drawInRect:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F17E415F-75F7-4069-9B54-7B95073EF9E1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "OpenGL ES2.0&#x5e94;&#x7528;&#x5b9e;&#x8df5;iOS/OpenGL ES&#x5b9e;&#x8df5;/&#x5b9e;&#x4f8b;2OpenGL ES&#x7eb9;&#x7406;&#x5b66;&#x4e60;/OpenGL_ES_VC02.m"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "-initUI"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
