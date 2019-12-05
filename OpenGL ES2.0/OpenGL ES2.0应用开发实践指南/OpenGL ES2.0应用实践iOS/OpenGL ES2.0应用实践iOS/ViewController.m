@@ -10,6 +10,7 @@
 #import "OpenGLES_VC.h"
 #import "OpenGL_ES_VC02.h"
 #import "OpenGL_ES_VC03.h"
+#import "OpenGL_ES_VC04.h"
 
 @interface ViewController ()
 
@@ -26,7 +27,7 @@
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     [super touchesBegan:touches withEvent:event];
     
-    OpenGL_ES_VC03 * vc = [OpenGL_ES_VC03 new];
+    OpenGL_ES_VC04 * vc = [OpenGL_ES_VC04 new];
     
     [self presentViewController:vc animated:true completion:nil];
 }
