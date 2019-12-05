@@ -10,6 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/*纹理动态调整*/
 @interface OpenGL_ES_VC03 : GLKViewController
 
 @end

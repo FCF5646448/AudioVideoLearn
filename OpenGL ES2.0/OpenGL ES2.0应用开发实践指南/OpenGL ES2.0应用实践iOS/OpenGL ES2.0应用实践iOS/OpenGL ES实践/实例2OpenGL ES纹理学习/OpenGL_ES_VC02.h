@@ -10,6 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/*纹理的简单实践*/
 @interface OpenGL_ES_VC02 : GLKViewController
 
 @end

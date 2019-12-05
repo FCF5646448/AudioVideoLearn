@@ -59,7 +59,7 @@ typedef struct {
     glGenBuffers(1, &vertexBufferID);
     // 3.2、 绑定缓存 (个人理解应该是用标识符标识一段空间)
     glBindBuffer(GL_ARRAY_BUFFER, vertexBufferID);
-    // 3。3、 复制顶点数据到当前上下文所绑定的缓存中。（前三个参数是copy左右，最后一个参数则是告诉上下文，这段缓存未来会被怎么使用，GL_STATIC_DRAW则说明缓存内的数据会被频繁改变，促使OpenGL ES以适当的方式来处理缓存的存储）
+    // 3。3、 复制顶点数据到当前上下文所绑定的缓存中。（前三个参数是copy左右，最后一个参数则是告诉上下文，这段缓存未来会被怎么使用，GL_STATIC_DRAW则说明缓存内的数据不会被频繁改变，促使OpenGL ES以适当的方式来处理缓存的存储）
     glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
     
 }

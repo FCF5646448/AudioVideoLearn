@@ -35,10 +35,12 @@ typedef struct {
     
     GLKView * view = (GLKView *)self.view;
     
-    //
+    //创建上下文
     view.context = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
+    //设置上下文
     [EAGLContext setCurrentContext:view.context];
     
+    //创建顶点着色器
     self.baseEffect = [[GLKBaseEffect alloc] init];
     self.baseEffect.useConstantColor = GL_TRUE;
     self.baseEffect.constantColor = GLKVector4Make(1.0f, 0.0f, 0.0f, 1.0);
@@ -46,7 +48,7 @@ typedef struct {
     glClearColor(0.0, 0.0, 1.0, 1.0);
     
     
-    //
+    //准备顶点数据
     static const SceneVertex2 vertices[] = {
         {{-0.5f,-0.5f,0.0f},{0.0f,0.0f}},
         {{0.5f,-0.5f,0.0f}, {1.0f,0.0f}},
@@ -61,24 +63,27 @@ typedef struct {
     glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
     
     
-    //
+    //纹理准备
     CGImageRef imageRef = [[UIImage imageNamed:@"leaves.gif"] CGImage];
     //GLKTextureLoader 会自动调用glTexParameteri()方法设置OpenGL ES取样和循环模式。
     GLKTextureInfo * textureInfo = [GLKTextureLoader textureWithCGImage:imageRef options:nil error:NULL];
     
+    //
     self.baseEffect.texture2d0.name = textureInfo.name;
     self.baseEffect.texture2d0.target = textureInfo.target;
         
 }
 
 - (void)glkView:(GLKView *)view drawInRect:(CGRect)rect {
-    
+    //开始绘制
     [self.baseEffect prepareToDraw];
     
     glClear(GL_COLOR_BUFFER_BIT);
     
     //渲染顶点坐标
+    //启用顶点渲染
     glEnableVertexAttribArray(GLKVertexAttribPosition);
+    //设置指针
     glVertexAttribPointer(GLKVertexAttribPosition,
                           3,
                           GL_FLOAT,
@@ -90,13 +95,17 @@ typedef struct {
     
     
     //渲染纹理坐标
+    //启用纹理渲染
     glEnableVertexAttribArray(GLKVertexAttribTexCoord0);
+    // 设置指针
     glVertexAttribPointer(GLKVertexAttribTexCoord0,
                           2,
                           GL_FLOAT,
                           GL_FALSE,
                           sizeof(SceneVertex2),
                           NULL + offsetof(SceneVertex2, textureCoords));
+    
+    //开始绘制
     glDrawArrays(GL_TRIANGLES, 0, 3);
     
 }
