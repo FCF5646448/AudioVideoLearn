@@ -16,6 +16,8 @@
 		193628BC238CCB3300D5C403 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 193628BB238CCB3300D5C403 /* main.m */; };
 		1968096D239241FE00D5459A /* OpenGLES_VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1968096C239241FE00D5459A /* OpenGLES_VC.m */; };
 		196809722393584D00D5459A /* AGLKView.m in Sources */ = {isa = PBXBuildFile; fileRef = 196809712393584D00D5459A /* AGLKView.m */; };
+		19AB0DAF239A06ED00D9F740 /* OpenGL_ES_VC05.m in Sources */ = {isa = PBXBuildFile; fileRef = 19AB0DAE239A06ED00D9F740 /* OpenGL_ES_VC05.m */; };
+		19AB0DB9239A5AA800D9F740 /* OpenGL_ES_VC06.m in Sources */ = {isa = PBXBuildFile; fileRef = 19AB0DB8239A5AA800D9F740 /* OpenGL_ES_VC06.m */; };
 		19F321BF2398E2E0009A9835 /* grid.png in Resources */ = {isa = PBXBuildFile; fileRef = 19F321BE2398E2E0009A9835 /* grid.png */; };
 		3110E545239945640081CCB2 /* OpenGL_ES_VC04.m in Sources */ = {isa = PBXBuildFile; fileRef = 3110E544239945640081CCB2 /* OpenGL_ES_VC04.m */; };
 		3110E54723995A1C0081CCB2 /* beetle.png in Resources */ = {isa = PBXBuildFile; fileRef = 3110E54623995A1C0081CCB2 /* beetle.png */; };
@@ -44,6 +46,10 @@
 		1968096C239241FE00D5459A /* OpenGLES_VC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGLES_VC.m; sourceTree = "<group>"; };
 		196809702393584D00D5459A /* AGLKView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AGLKView.h; sourceTree = "<group>"; };
 		196809712393584D00D5459A /* AGLKView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AGLKView.m; sourceTree = "<group>"; };
+		19AB0DAD239A06ED00D9F740 /* OpenGL_ES_VC05.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenGL_ES_VC05.h; sourceTree = "<group>"; };
+		19AB0DAE239A06ED00D9F740 /* OpenGL_ES_VC05.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGL_ES_VC05.m; sourceTree = "<group>"; };
+		19AB0DB7239A5AA800D9F740 /* OpenGL_ES_VC06.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenGL_ES_VC06.h; sourceTree = "<group>"; };
+		19AB0DB8239A5AA800D9F740 /* OpenGL_ES_VC06.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGL_ES_VC06.m; sourceTree = "<group>"; };
 		19F321BD2398B2FF009A9835 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		19F321BE2398E2E0009A9835 /* grid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grid.png; sourceTree = "<group>"; };
 		3110E543239945640081CCB2 /* OpenGL_ES_VC04.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenGL_ES_VC04.h; sourceTree = "<group>"; };
@@ -157,6 +163,10 @@
 				311DE2FC23980E6300CA4A8D /* OpenGL_ES_VC03.m */,
 				3110E543239945640081CCB2 /* OpenGL_ES_VC04.h */,
 				3110E544239945640081CCB2 /* OpenGL_ES_VC04.m */,
+				19AB0DAD239A06ED00D9F740 /* OpenGL_ES_VC05.h */,
+				19AB0DAE239A06ED00D9F740 /* OpenGL_ES_VC05.m */,
+				19AB0DB7239A5AA800D9F740 /* OpenGL_ES_VC06.h */,
+				19AB0DB8239A5AA800D9F740 /* OpenGL_ES_VC06.m */,
 			);
 			path = "实例2OpenGL ES纹理学习";
 			sourceTree = "<group>";
@@ -249,7 +259,9 @@
 				311DE2F42397E88E00CA4A8D /* OpenGL_ES_VC02.m in Sources */,
 				193628AB238CCB3200D5C403 /* AppDelegate.m in Sources */,
 				196809722393584D00D5459A /* AGLKView.m in Sources */,
+				19AB0DB9239A5AA800D9F740 /* OpenGL_ES_VC06.m in Sources */,
 				311DE2FD23980E6300CA4A8D /* OpenGL_ES_VC03.m in Sources */,
+				19AB0DAF239A06ED00D9F740 /* OpenGL_ES_VC05.m in Sources */,
 				311DE2FA23980DD400CA4A8D /* AGLKTextureLoader.m in Sources */,
 				3110E545239945640081CCB2 /* OpenGL_ES_VC04.m in Sources */,
 				193628BC238CCB3300D5C403 /* main.m in Sources */,

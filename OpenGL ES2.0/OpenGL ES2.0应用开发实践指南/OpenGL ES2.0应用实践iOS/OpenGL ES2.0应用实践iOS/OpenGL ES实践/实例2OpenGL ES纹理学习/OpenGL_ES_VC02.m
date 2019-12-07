@@ -65,7 +65,7 @@ typedef struct {
     
     //纹理准备
     CGImageRef imageRef = [[UIImage imageNamed:@"leaves.gif"] CGImage];
-    //GLKTextureLoader 会自动调用glTexParameteri()方法设置OpenGL ES取样和循环模式。
+    //GLKTextureLoader 会自动调用glTexParameteri()方法设置OpenGL ES取样和循环模式。它里面使用glGenTexture()和glBndTexture()等与顶点缓存相似的函数
     GLKTextureInfo * textureInfo = [GLKTextureLoader textureWithCGImage:imageRef options:nil error:NULL];
     
     //

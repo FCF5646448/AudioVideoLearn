@@ -9,7 +9,7 @@
 #import <GLKit/GLKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
-
+/*纹理的 透明 纹理 混合 多通道 */
 @interface OpenGL_ES_VC04 : GLKViewController
 
 @end
