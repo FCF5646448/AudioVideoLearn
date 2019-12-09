@@ -9,7 +9,7 @@
 #import <GLKit/GLKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
-
+/*自定义纹理 没怎么目标为什么要这样写，没有调用loadShaders，得出的结果好像也是一样的*/
 @interface OpenGL_ES_VC06 : GLKViewController
 
 @end

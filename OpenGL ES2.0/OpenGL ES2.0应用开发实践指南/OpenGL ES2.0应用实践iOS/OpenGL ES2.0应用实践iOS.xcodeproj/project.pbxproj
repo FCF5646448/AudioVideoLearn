@@ -26,6 +26,8 @@
 		311DE2F62397F1FA00CA4A8D /* leaves.gif in Resources */ = {isa = PBXBuildFile; fileRef = 311DE2F52397F1F900CA4A8D /* leaves.gif */; };
 		311DE2FA23980DD400CA4A8D /* AGLKTextureLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 311DE2F923980DD400CA4A8D /* AGLKTextureLoader.m */; };
 		311DE2FD23980E6300CA4A8D /* OpenGL_ES_VC03.m in Sources */ = {isa = PBXBuildFile; fileRef = 311DE2FC23980E6300CA4A8D /* OpenGL_ES_VC03.m */; };
+		31723743239B880300C34AE1 /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 31723741239B880200C34AE1 /* Shader.fsh */; };
+		31723744239B880300C34AE1 /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 31723742239B880300C34AE1 /* Shader.vsh */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +65,8 @@
 		311DE2F923980DD400CA4A8D /* AGLKTextureLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AGLKTextureLoader.m; sourceTree = "<group>"; };
 		311DE2FB23980E6300CA4A8D /* OpenGL_ES_VC03.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenGL_ES_VC03.h; sourceTree = "<group>"; };
 		311DE2FC23980E6300CA4A8D /* OpenGL_ES_VC03.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenGL_ES_VC03.m; sourceTree = "<group>"; };
+		31723741239B880200C34AE1 /* Shader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader.fsh; sourceTree = "<group>"; };
+		31723742239B880300C34AE1 /* Shader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = Shader.vsh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,8 @@
 				3110E54623995A1C0081CCB2 /* beetle.png */,
 				3110E54823995A260081CCB2 /* Default-568h@2x.png */,
 				19F321BD2398B2FF009A9835 /* PrefixHeader.pch */,
+				31723741239B880200C34AE1 /* Shader.fsh */,
+				31723742239B880300C34AE1 /* Shader.vsh */,
 			);
 			path = "OpenGL ES2.0应用实践iOS";
 			sourceTree = "<group>";
@@ -140,6 +146,7 @@
 			children = (
 				1968096A239241CB00D5459A /* 实例1OpenGL ES基本使用流程 */,
 				311DE2F12397E82E00CA4A8D /* 实例2OpenGL ES纹理学习 */,
+				31723745239B9DDC00C34AE1 /* 实例3OpenGL ES光线学习 */,
 			);
 			path = "OpenGL ES实践";
 			sourceTree = "<group>";
@@ -178,6 +185,13 @@
 				311DE2F923980DD400CA4A8D /* AGLKTextureLoader.m */,
 			);
 			path = "自定义GLKTextureLoader";
+			sourceTree = "<group>";
+		};
+		31723745239B9DDC00C34AE1 /* 实例3OpenGL ES光线学习 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "实例3OpenGL ES光线学习";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,10 +251,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31723743239B880300C34AE1 /* Shader.fsh in Resources */,
 				3110E54723995A1C0081CCB2 /* beetle.png in Resources */,
 				193628B9238CCB3300D5C403 /* LaunchScreen.storyboard in Resources */,
 				19F321BF2398E2E0009A9835 /* grid.png in Resources */,
 				193628B6238CCB3300D5C403 /* Assets.xcassets in Resources */,
+				31723744239B880300C34AE1 /* Shader.vsh in Resources */,
 				311DE2F62397F1FA00CA4A8D /* leaves.gif in Resources */,
 				3110E54923995A260081CCB2 /* Default-568h@2x.png in Resources */,
 				193628B4238CCB3200D5C403 /* Main.storyboard in Resources */,
