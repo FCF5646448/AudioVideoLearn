@@ -1,0 +1,715 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		191A0CEE23B8B00E0076BAFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191A0CED23B8B00E0076BAFF /* AppDelegate.swift */; };
+		191A0CF023B8B00E0076BAFF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191A0CEF23B8B00E0076BAFF /* SceneDelegate.swift */; };
+		191A0CF223B8B00E0076BAFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191A0CF123B8B00E0076BAFF /* ViewController.swift */; };
+		191A0CF523B8B00E0076BAFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 191A0CF323B8B00E0076BAFF /* Main.storyboard */; };
+		191A0CF723B8B00E0076BAFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 191A0CF623B8B00E0076BAFF /* Assets.xcassets */; };
+		191A0CFA23B8B00E0076BAFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 191A0CF823B8B00E0076BAFF /* LaunchScreen.storyboard */; };
+		191A0D0423B8E2D70076BAFF /* PixelBufferTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 191A0D0323B8E2D70076BAFF /* PixelBufferTool.m */; };
+		191A0DB923B8EE6E0076BAFF /* aw_encode_flv.c in Sources */ = {isa = PBXBuildFile; fileRef = 191A0D6C23B8EE6E0076BAFF /* aw_encode_flv.c */; };
+		191A0DBA23B8EE6E0076BAFF /* aw_sw_x264_encoder.c in Sources */ = {isa = PBXBuildFile; fileRef = 191A0D7323B8EE6E0076BAFF /* aw_sw_x264_encoder.c */; };
+		191A0DBB23B8EE6E0076BAFF /* aw_sw_faac_encoder.c in Sources */ = {isa = PBXBuildFile; fileRef = 191A0D7423B8EE6E0076BAFF /* aw_sw_faac_encoder.c */; };
+		191A0DBC23B8EE6E0076BAFF /* aw_x264.c in Sources */ = {isa = PBXBuildFile; fileRef = 191A0D7523B8EE6E0076BAFF /* aw_x264.c */; };
+		191A0DBD23B8EE6E0076BAFF /* aw_faac.c in Sources */ = {isa = PBXBuildFile; fileRef = 191A0D7623B8EE6E0076BAFF /* aw_faac.c */; };
+		191A0DBE23B8EE6E0076BAFF /* aw_streamer.c in Sources */ = {isa = PBXBuildFile; fileRef = 191A0D7823B8EE6E0076BAFF /* aw_streamer.c */; };
+		191A0DBF23B8EE6E0076BAFF /* aw_data.c in Sources */ = {isa = PBXBuildFile; fileRef = 191A0D7B23B8EE6E0076BAFF /* aw_data.c */; };
+		191A0DC023B8EE6E0076BAFF /* aw_file.c in Sources */ = {isa = PBXBuildFile; fileRef = 191A0D7D23B8EE6E0076BAFF /* aw_file.c */; };
+		191A0DC123B8EE6E0076BAFF /* aw_thread_poll.c in Sources */ = {isa = PBXBuildFile; fileRef = 191A0D8123B8EE6E0076BAFF /* aw_thread_poll.c */; };
+		191A0DC223B8EE6E0076BAFF /* aw_alloc.c in Sources */ = {isa = PBXBuildFile; fileRef = 191A0D8523B8EE6E0076BAFF /* aw_alloc.c */; };
+		191A0DC323B8EE6E0076BAFF /* aw_rtmp.c in Sources */ = {isa = PBXBuildFile; fileRef = 191A0D8623B8EE6E0076BAFF /* aw_rtmp.c */; };
+		191A0DC423B8EE6E0076BAFF /* aw_dict.c in Sources */ = {isa = PBXBuildFile; fileRef = 191A0D8923B8EE6E0076BAFF /* aw_dict.c */; };
+		191A0DC523B8EE6E0076BAFF /* aw_array.c in Sources */ = {isa = PBXBuildFile; fileRef = 191A0D8A23B8EE6E0076BAFF /* aw_array.c */; };
+		191A0DC623B8EE6E0076BAFF /* libfaac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 191A0D9223B8EE6E0076BAFF /* libfaac.a */; };
+		191A0DC723B8EE6E0076BAFF /* libx264.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 191A0D9823B8EE6E0076BAFF /* libx264.a */; };
+		191A0DC823B8EE6E0076BAFF /* librtmp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 191A0DA023B8EE6E0076BAFF /* librtmp.a */; };
+		191A0DC923B8EE6E0076BAFF /* libyuv.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 191A0DB823B8EE6E0076BAFF /* libyuv.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		191A0CEA23B8B00E0076BAFF /* 直播客户端实现.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "直播客户端实现.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		191A0CED23B8B00E0076BAFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		191A0CEF23B8B00E0076BAFF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		191A0CF123B8B00E0076BAFF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		191A0CF423B8B00E0076BAFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		191A0CF623B8B00E0076BAFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		191A0CF923B8B00E0076BAFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		191A0CFB23B8B00E0076BAFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		191A0D0123B8E2D70076BAFF /* 直播客户端实现-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "直播客户端实现-Bridging-Header.h"; sourceTree = "<group>"; };
+		191A0D0223B8E2D70076BAFF /* PixelBufferTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PixelBufferTool.h; sourceTree = "<group>"; };
+		191A0D0323B8E2D70076BAFF /* PixelBufferTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PixelBufferTool.m; sourceTree = "<group>"; };
+		191A0D6C23B8EE6E0076BAFF /* aw_encode_flv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aw_encode_flv.c; sourceTree = "<group>"; };
+		191A0D6D23B8EE6E0076BAFF /* aw_encode_flv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aw_encode_flv.h; sourceTree = "<group>"; };
+		191A0D6F23B8EE6E0076BAFF /* aw_sw_x264_encoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aw_sw_x264_encoder.h; sourceTree = "<group>"; };
+		191A0D7023B8EE6E0076BAFF /* aw_x264.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aw_x264.h; sourceTree = "<group>"; };
+		191A0D7123B8EE6E0076BAFF /* aw_sw_faac_encoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aw_sw_faac_encoder.h; sourceTree = "<group>"; };
+		191A0D7223B8EE6E0076BAFF /* aw_faac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aw_faac.h; sourceTree = "<group>"; };
+		191A0D7323B8EE6E0076BAFF /* aw_sw_x264_encoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aw_sw_x264_encoder.c; sourceTree = "<group>"; };
+		191A0D7423B8EE6E0076BAFF /* aw_sw_faac_encoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aw_sw_faac_encoder.c; sourceTree = "<group>"; };
+		191A0D7523B8EE6E0076BAFF /* aw_x264.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aw_x264.c; sourceTree = "<group>"; };
+		191A0D7623B8EE6E0076BAFF /* aw_faac.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aw_faac.c; sourceTree = "<group>"; };
+		191A0D7823B8EE6E0076BAFF /* aw_streamer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aw_streamer.c; sourceTree = "<group>"; };
+		191A0D7923B8EE6E0076BAFF /* aw_streamer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aw_streamer.h; sourceTree = "<group>"; };
+		191A0D7B23B8EE6E0076BAFF /* aw_data.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aw_data.c; sourceTree = "<group>"; };
+		191A0D7C23B8EE6E0076BAFF /* aw_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aw_common.h; sourceTree = "<group>"; };
+		191A0D7D23B8EE6E0076BAFF /* aw_file.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aw_file.c; sourceTree = "<group>"; };
+		191A0D7E23B8EE6E0076BAFF /* aw_rtmp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aw_rtmp.h; sourceTree = "<group>"; };
+		191A0D7F23B8EE6E0076BAFF /* aw_alloc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aw_alloc.h; sourceTree = "<group>"; };
+		191A0D8023B8EE6E0076BAFF /* aw_dict.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aw_dict.h; sourceTree = "<group>"; };
+		191A0D8123B8EE6E0076BAFF /* aw_thread_poll.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aw_thread_poll.c; sourceTree = "<group>"; };
+		191A0D8223B8EE6E0076BAFF /* aw_array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aw_array.h; sourceTree = "<group>"; };
+		191A0D8323B8EE6E0076BAFF /* aw_file.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aw_file.h; sourceTree = "<group>"; };
+		191A0D8423B8EE6E0076BAFF /* aw_data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aw_data.h; sourceTree = "<group>"; };
+		191A0D8523B8EE6E0076BAFF /* aw_alloc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aw_alloc.c; sourceTree = "<group>"; };
+		191A0D8623B8EE6E0076BAFF /* aw_rtmp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aw_rtmp.c; sourceTree = "<group>"; };
+		191A0D8723B8EE6E0076BAFF /* aw_thread_poll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aw_thread_poll.h; sourceTree = "<group>"; };
+		191A0D8823B8EE6E0076BAFF /* aw_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aw_utils.h; sourceTree = "<group>"; };
+		191A0D8923B8EE6E0076BAFF /* aw_dict.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aw_dict.c; sourceTree = "<group>"; };
+		191A0D8A23B8EE6E0076BAFF /* aw_array.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aw_array.c; sourceTree = "<group>"; };
+		191A0D8B23B8EE6E0076BAFF /* aw_all.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aw_all.h; sourceTree = "<group>"; };
+		191A0D8F23B8EE6E0076BAFF /* faac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = faac.h; sourceTree = "<group>"; };
+		191A0D9023B8EE6E0076BAFF /* faaccfg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = faaccfg.h; sourceTree = "<group>"; };
+		191A0D9223B8EE6E0076BAFF /* libfaac.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfaac.a; sourceTree = "<group>"; };
+		191A0D9523B8EE6E0076BAFF /* x264_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x264_config.h; sourceTree = "<group>"; };
+		191A0D9623B8EE6E0076BAFF /* x264.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x264.h; sourceTree = "<group>"; };
+		191A0D9823B8EE6E0076BAFF /* libx264.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libx264.a; sourceTree = "<group>"; };
+		191A0D9B23B8EE6E0076BAFF /* http.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = http.h; sourceTree = "<group>"; };
+		191A0D9C23B8EE6E0076BAFF /* amf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = amf.h; sourceTree = "<group>"; };
+		191A0D9D23B8EE6E0076BAFF /* log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = log.h; sourceTree = "<group>"; };
+		191A0D9E23B8EE6E0076BAFF /* rtmp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rtmp.h; sourceTree = "<group>"; };
+		191A0DA023B8EE6E0076BAFF /* librtmp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = librtmp.a; sourceTree = "<group>"; };
+		191A0DA323B8EE6E0076BAFF /* libyuv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libyuv.h; sourceTree = "<group>"; };
+		191A0DA523B8EE6E0076BAFF /* scale_row.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scale_row.h; sourceTree = "<group>"; };
+		191A0DA623B8EE6E0076BAFF /* scale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scale.h; sourceTree = "<group>"; };
+		191A0DA723B8EE6E0076BAFF /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
+		191A0DA823B8EE6E0076BAFF /* cpu_id.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cpu_id.h; sourceTree = "<group>"; };
+		191A0DA923B8EE6E0076BAFF /* video_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = video_common.h; sourceTree = "<group>"; };
+		191A0DAA23B8EE6E0076BAFF /* mjpeg_decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mjpeg_decoder.h; sourceTree = "<group>"; };
+		191A0DAB23B8EE6E0076BAFF /* planar_functions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = planar_functions.h; sourceTree = "<group>"; };
+		191A0DAC23B8EE6E0076BAFF /* scale_argb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scale_argb.h; sourceTree = "<group>"; };
+		191A0DAD23B8EE6E0076BAFF /* compare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = compare.h; sourceTree = "<group>"; };
+		191A0DAE23B8EE6E0076BAFF /* convert_argb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = convert_argb.h; sourceTree = "<group>"; };
+		191A0DAF23B8EE6E0076BAFF /* rotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rotate.h; sourceTree = "<group>"; };
+		191A0DB023B8EE6E0076BAFF /* convert_from_argb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = convert_from_argb.h; sourceTree = "<group>"; };
+		191A0DB123B8EE6E0076BAFF /* basic_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = basic_types.h; sourceTree = "<group>"; };
+		191A0DB223B8EE6E0076BAFF /* convert_from.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = convert_from.h; sourceTree = "<group>"; };
+		191A0DB323B8EE6E0076BAFF /* format_conversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = format_conversion.h; sourceTree = "<group>"; };
+		191A0DB423B8EE6E0076BAFF /* convert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = convert.h; sourceTree = "<group>"; };
+		191A0DB523B8EE6E0076BAFF /* rotate_argb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rotate_argb.h; sourceTree = "<group>"; };
+		191A0DB623B8EE6E0076BAFF /* row.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = row.h; sourceTree = "<group>"; };
+		191A0DB823B8EE6E0076BAFF /* libyuv.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libyuv.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		191A0CE723B8B00E0076BAFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				191A0DC623B8EE6E0076BAFF /* libfaac.a in Frameworks */,
+				191A0DC723B8EE6E0076BAFF /* libx264.a in Frameworks */,
+				191A0DC923B8EE6E0076BAFF /* libyuv.a in Frameworks */,
+				191A0DC823B8EE6E0076BAFF /* librtmp.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		191A0CE123B8B00E0076BAFF = {
+			isa = PBXGroup;
+			children = (
+				191A0D6823B8EE6E0076BAFF /* clibs */,
+				191A0CEC23B8B00E0076BAFF /* 直播客户端实现 */,
+				191A0CEB23B8B00E0076BAFF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		191A0CEB23B8B00E0076BAFF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				191A0CEA23B8B00E0076BAFF /* 直播客户端实现.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		191A0CEC23B8B00E0076BAFF /* 直播客户端实现 */ = {
+			isa = PBXGroup;
+			children = (
+				191A0CED23B8B00E0076BAFF /* AppDelegate.swift */,
+				191A0CEF23B8B00E0076BAFF /* SceneDelegate.swift */,
+				191A0CF123B8B00E0076BAFF /* ViewController.swift */,
+				191A0D0223B8E2D70076BAFF /* PixelBufferTool.h */,
+				191A0D0323B8E2D70076BAFF /* PixelBufferTool.m */,
+				191A0CF323B8B00E0076BAFF /* Main.storyboard */,
+				191A0CF623B8B00E0076BAFF /* Assets.xcassets */,
+				191A0CF823B8B00E0076BAFF /* LaunchScreen.storyboard */,
+				191A0CFB23B8B00E0076BAFF /* Info.plist */,
+				191A0D0123B8E2D70076BAFF /* 直播客户端实现-Bridging-Header.h */,
+			);
+			path = "直播客户端实现";
+			sourceTree = "<group>";
+		};
+		191A0D6823B8EE6E0076BAFF /* clibs */ = {
+			isa = PBXGroup;
+			children = (
+				191A0D6923B8EE6E0076BAFF /* libaw */,
+				191A0D8C23B8EE6E0076BAFF /* 3th-party */,
+			);
+			path = clibs;
+			sourceTree = "<group>";
+		};
+		191A0D6923B8EE6E0076BAFF /* libaw */ = {
+			isa = PBXGroup;
+			children = (
+				191A0D6A23B8EE6E0076BAFF /* pushStream */,
+				191A0D7A23B8EE6E0076BAFF /* common */,
+				191A0D8B23B8EE6E0076BAFF /* aw_all.h */,
+			);
+			path = libaw;
+			sourceTree = "<group>";
+		};
+		191A0D6A23B8EE6E0076BAFF /* pushStream */ = {
+			isa = PBXGroup;
+			children = (
+				191A0D6B23B8EE6E0076BAFF /* flv */,
+				191A0D6E23B8EE6E0076BAFF /* encoder */,
+				191A0D7723B8EE6E0076BAFF /* rtmp */,
+			);
+			path = pushStream;
+			sourceTree = "<group>";
+		};
+		191A0D6B23B8EE6E0076BAFF /* flv */ = {
+			isa = PBXGroup;
+			children = (
+				191A0D6C23B8EE6E0076BAFF /* aw_encode_flv.c */,
+				191A0D6D23B8EE6E0076BAFF /* aw_encode_flv.h */,
+			);
+			path = flv;
+			sourceTree = "<group>";
+		};
+		191A0D6E23B8EE6E0076BAFF /* encoder */ = {
+			isa = PBXGroup;
+			children = (
+				191A0D6F23B8EE6E0076BAFF /* aw_sw_x264_encoder.h */,
+				191A0D7023B8EE6E0076BAFF /* aw_x264.h */,
+				191A0D7123B8EE6E0076BAFF /* aw_sw_faac_encoder.h */,
+				191A0D7223B8EE6E0076BAFF /* aw_faac.h */,
+				191A0D7323B8EE6E0076BAFF /* aw_sw_x264_encoder.c */,
+				191A0D7423B8EE6E0076BAFF /* aw_sw_faac_encoder.c */,
+				191A0D7523B8EE6E0076BAFF /* aw_x264.c */,
+				191A0D7623B8EE6E0076BAFF /* aw_faac.c */,
+			);
+			path = encoder;
+			sourceTree = "<group>";
+		};
+		191A0D7723B8EE6E0076BAFF /* rtmp */ = {
+			isa = PBXGroup;
+			children = (
+				191A0D7823B8EE6E0076BAFF /* aw_streamer.c */,
+				191A0D7923B8EE6E0076BAFF /* aw_streamer.h */,
+			);
+			path = rtmp;
+			sourceTree = "<group>";
+		};
+		191A0D7A23B8EE6E0076BAFF /* common */ = {
+			isa = PBXGroup;
+			children = (
+				191A0D7B23B8EE6E0076BAFF /* aw_data.c */,
+				191A0D7C23B8EE6E0076BAFF /* aw_common.h */,
+				191A0D7D23B8EE6E0076BAFF /* aw_file.c */,
+				191A0D7E23B8EE6E0076BAFF /* aw_rtmp.h */,
+				191A0D7F23B8EE6E0076BAFF /* aw_alloc.h */,
+				191A0D8023B8EE6E0076BAFF /* aw_dict.h */,
+				191A0D8123B8EE6E0076BAFF /* aw_thread_poll.c */,
+				191A0D8223B8EE6E0076BAFF /* aw_array.h */,
+				191A0D8323B8EE6E0076BAFF /* aw_file.h */,
+				191A0D8423B8EE6E0076BAFF /* aw_data.h */,
+				191A0D8523B8EE6E0076BAFF /* aw_alloc.c */,
+				191A0D8623B8EE6E0076BAFF /* aw_rtmp.c */,
+				191A0D8723B8EE6E0076BAFF /* aw_thread_poll.h */,
+				191A0D8823B8EE6E0076BAFF /* aw_utils.h */,
+				191A0D8923B8EE6E0076BAFF /* aw_dict.c */,
+				191A0D8A23B8EE6E0076BAFF /* aw_array.c */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		191A0D8C23B8EE6E0076BAFF /* 3th-party */ = {
+			isa = PBXGroup;
+			children = (
+				191A0D8D23B8EE6E0076BAFF /* libfaac */,
+				191A0D9323B8EE6E0076BAFF /* libx264 */,
+				191A0D9923B8EE6E0076BAFF /* librtmp */,
+				191A0DA123B8EE6E0076BAFF /* libyuv */,
+			);
+			path = "3th-party";
+			sourceTree = "<group>";
+		};
+		191A0D8D23B8EE6E0076BAFF /* libfaac */ = {
+			isa = PBXGroup;
+			children = (
+				191A0D8E23B8EE6E0076BAFF /* include */,
+				191A0D9123B8EE6E0076BAFF /* lib */,
+			);
+			path = libfaac;
+			sourceTree = "<group>";
+		};
+		191A0D8E23B8EE6E0076BAFF /* include */ = {
+			isa = PBXGroup;
+			children = (
+				191A0D8F23B8EE6E0076BAFF /* faac.h */,
+				191A0D9023B8EE6E0076BAFF /* faaccfg.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		191A0D9123B8EE6E0076BAFF /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				191A0D9223B8EE6E0076BAFF /* libfaac.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		191A0D9323B8EE6E0076BAFF /* libx264 */ = {
+			isa = PBXGroup;
+			children = (
+				191A0D9423B8EE6E0076BAFF /* include */,
+				191A0D9723B8EE6E0076BAFF /* lib */,
+			);
+			path = libx264;
+			sourceTree = "<group>";
+		};
+		191A0D9423B8EE6E0076BAFF /* include */ = {
+			isa = PBXGroup;
+			children = (
+				191A0D9523B8EE6E0076BAFF /* x264_config.h */,
+				191A0D9623B8EE6E0076BAFF /* x264.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		191A0D9723B8EE6E0076BAFF /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				191A0D9823B8EE6E0076BAFF /* libx264.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		191A0D9923B8EE6E0076BAFF /* librtmp */ = {
+			isa = PBXGroup;
+			children = (
+				191A0D9A23B8EE6E0076BAFF /* include */,
+				191A0D9F23B8EE6E0076BAFF /* lib */,
+			);
+			path = librtmp;
+			sourceTree = "<group>";
+		};
+		191A0D9A23B8EE6E0076BAFF /* include */ = {
+			isa = PBXGroup;
+			children = (
+				191A0D9B23B8EE6E0076BAFF /* http.h */,
+				191A0D9C23B8EE6E0076BAFF /* amf.h */,
+				191A0D9D23B8EE6E0076BAFF /* log.h */,
+				191A0D9E23B8EE6E0076BAFF /* rtmp.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		191A0D9F23B8EE6E0076BAFF /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				191A0DA023B8EE6E0076BAFF /* librtmp.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		191A0DA123B8EE6E0076BAFF /* libyuv */ = {
+			isa = PBXGroup;
+			children = (
+				191A0DA223B8EE6E0076BAFF /* include */,
+				191A0DB723B8EE6E0076BAFF /* lib */,
+			);
+			path = libyuv;
+			sourceTree = "<group>";
+		};
+		191A0DA223B8EE6E0076BAFF /* include */ = {
+			isa = PBXGroup;
+			children = (
+				191A0DA323B8EE6E0076BAFF /* libyuv.h */,
+				191A0DA423B8EE6E0076BAFF /* libyuv */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		191A0DA423B8EE6E0076BAFF /* libyuv */ = {
+			isa = PBXGroup;
+			children = (
+				191A0DA523B8EE6E0076BAFF /* scale_row.h */,
+				191A0DA623B8EE6E0076BAFF /* scale.h */,
+				191A0DA723B8EE6E0076BAFF /* version.h */,
+				191A0DA823B8EE6E0076BAFF /* cpu_id.h */,
+				191A0DA923B8EE6E0076BAFF /* video_common.h */,
+				191A0DAA23B8EE6E0076BAFF /* mjpeg_decoder.h */,
+				191A0DAB23B8EE6E0076BAFF /* planar_functions.h */,
+				191A0DAC23B8EE6E0076BAFF /* scale_argb.h */,
+				191A0DAD23B8EE6E0076BAFF /* compare.h */,
+				191A0DAE23B8EE6E0076BAFF /* convert_argb.h */,
+				191A0DAF23B8EE6E0076BAFF /* rotate.h */,
+				191A0DB023B8EE6E0076BAFF /* convert_from_argb.h */,
+				191A0DB123B8EE6E0076BAFF /* basic_types.h */,
+				191A0DB223B8EE6E0076BAFF /* convert_from.h */,
+				191A0DB323B8EE6E0076BAFF /* format_conversion.h */,
+				191A0DB423B8EE6E0076BAFF /* convert.h */,
+				191A0DB523B8EE6E0076BAFF /* rotate_argb.h */,
+				191A0DB623B8EE6E0076BAFF /* row.h */,
+			);
+			path = libyuv;
+			sourceTree = "<group>";
+		};
+		191A0DB723B8EE6E0076BAFF /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				191A0DB823B8EE6E0076BAFF /* libyuv.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		191A0CE923B8B00E0076BAFF /* 直播客户端实现 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 191A0CFE23B8B00E0076BAFF /* Build configuration list for PBXNativeTarget "直播客户端实现" */;
+			buildPhases = (
+				191A0CE623B8B00E0076BAFF /* Sources */,
+				191A0CE723B8B00E0076BAFF /* Frameworks */,
+				191A0CE823B8B00E0076BAFF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "直播客户端实现";
+			productName = "直播客户端实现";
+			productReference = 191A0CEA23B8B00E0076BAFF /* 直播客户端实现.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		191A0CE223B8B00E0076BAFF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "冯才凡";
+				TargetAttributes = {
+					191A0CE923B8B00E0076BAFF = {
+						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
+					};
+				};
+			};
+			buildConfigurationList = 191A0CE523B8B00E0076BAFF /* Build configuration list for PBXProject "直播客户端实现" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 191A0CE123B8B00E0076BAFF;
+			productRefGroup = 191A0CEB23B8B00E0076BAFF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				191A0CE923B8B00E0076BAFF /* 直播客户端实现 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		191A0CE823B8B00E0076BAFF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				191A0CFA23B8B00E0076BAFF /* LaunchScreen.storyboard in Resources */,
+				191A0CF723B8B00E0076BAFF /* Assets.xcassets in Resources */,
+				191A0CF523B8B00E0076BAFF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		191A0CE623B8B00E0076BAFF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				191A0DBE23B8EE6E0076BAFF /* aw_streamer.c in Sources */,
+				191A0DC023B8EE6E0076BAFF /* aw_file.c in Sources */,
+				191A0DBA23B8EE6E0076BAFF /* aw_sw_x264_encoder.c in Sources */,
+				191A0CF223B8B00E0076BAFF /* ViewController.swift in Sources */,
+				191A0CEE23B8B00E0076BAFF /* AppDelegate.swift in Sources */,
+				191A0DC523B8EE6E0076BAFF /* aw_array.c in Sources */,
+				191A0DC423B8EE6E0076BAFF /* aw_dict.c in Sources */,
+				191A0DC123B8EE6E0076BAFF /* aw_thread_poll.c in Sources */,
+				191A0D0423B8E2D70076BAFF /* PixelBufferTool.m in Sources */,
+				191A0DBD23B8EE6E0076BAFF /* aw_faac.c in Sources */,
+				191A0DB923B8EE6E0076BAFF /* aw_encode_flv.c in Sources */,
+				191A0DC223B8EE6E0076BAFF /* aw_alloc.c in Sources */,
+				191A0DC323B8EE6E0076BAFF /* aw_rtmp.c in Sources */,
+				191A0DBC23B8EE6E0076BAFF /* aw_x264.c in Sources */,
+				191A0DBF23B8EE6E0076BAFF /* aw_data.c in Sources */,
+				191A0DBB23B8EE6E0076BAFF /* aw_sw_faac_encoder.c in Sources */,
+				191A0CF023B8B00E0076BAFF /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		191A0CF323B8B00E0076BAFF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				191A0CF423B8B00E0076BAFF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		191A0CF823B8B00E0076BAFF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				191A0CF923B8B00E0076BAFF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		191A0CFC23B8B00E0076BAFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		191A0CFD23B8B00E0076BAFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		191A0CFF23B8B00E0076BAFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VUUT4765D9;
+				ENABLE_BITCODE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/clibs/3th-party/libyuv/include",
+					"$(PROJECT_DIR)/clibs/libaw/common",
+					"$(PROJECT_DIR)/clibs/libaw",
+				);
+				INFOPLIST_FILE = "直播客户端实现/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/直播客户端实现/clibs/3th-party/libfaac/lib",
+					"$(PROJECT_DIR)/直播客户端实现/clibs/3th-party/libx264/lib",
+					"$(PROJECT_DIR)/直播客户端实现/clibs/3th-party/librtmp/lib",
+					"$(PROJECT_DIR)/直播客户端实现/clibs/3th-party/libyuv/lib",
+					"$(PROJECT_DIR)/clibs/3th-party/libfaac/lib",
+					"$(PROJECT_DIR)/clibs/3th-party/libx264/lib",
+					"$(PROJECT_DIR)/clibs/3th-party/librtmp/lib",
+					"$(PROJECT_DIR)/clibs/3th-party/libyuv/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fcf.LivingDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "直播客户端实现/直播客户端实现-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		191A0D0023B8B00E0076BAFF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = VUUT4765D9;
+				ENABLE_BITCODE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/clibs/3th-party/libyuv/include",
+					"$(PROJECT_DIR)/clibs/libaw/common",
+					"$(PROJECT_DIR)/clibs/libaw",
+				);
+				INFOPLIST_FILE = "直播客户端实现/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/直播客户端实现/clibs/3th-party/libfaac/lib",
+					"$(PROJECT_DIR)/直播客户端实现/clibs/3th-party/libx264/lib",
+					"$(PROJECT_DIR)/直播客户端实现/clibs/3th-party/librtmp/lib",
+					"$(PROJECT_DIR)/直播客户端实现/clibs/3th-party/libyuv/lib",
+					"$(PROJECT_DIR)/clibs/3th-party/libfaac/lib",
+					"$(PROJECT_DIR)/clibs/3th-party/libx264/lib",
+					"$(PROJECT_DIR)/clibs/3th-party/librtmp/lib",
+					"$(PROJECT_DIR)/clibs/3th-party/libyuv/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fcf.LivingDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "直播客户端实现/直播客户端实现-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		191A0CE523B8B00E0076BAFF /* Build configuration list for PBXProject "直播客户端实现" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				191A0CFC23B8B00E0076BAFF /* Debug */,
+				191A0CFD23B8B00E0076BAFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		191A0CFE23B8B00E0076BAFF /* Build configuration list for PBXNativeTarget "直播客户端实现" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				191A0CFF23B8B00E0076BAFF /* Debug */,
+				191A0D0023B8B00E0076BAFF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 191A0CE223B8B00E0076BAFF /* Project object */;
+}
