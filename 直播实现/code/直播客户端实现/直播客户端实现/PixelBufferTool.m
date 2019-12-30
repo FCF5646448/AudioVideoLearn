@@ -11,7 +11,7 @@
 
 @implementation PixelBufferTool
 
-+ (NSDate *)convertVideoSampleBufferToYuvData:(CMSampleBufferRef)videoSample {
++ (NSData *)convertVideoSampleBufferToYuvData:(CMSampleBufferRef)videoSample {
     
     
     //先获取CVImageBufferRef数据
@@ -46,4 +46,17 @@
                                 length:y_size + uv_size];
 }
 
++ (NSData *)convertAudioSampleBufferToPCMData:(CMSampleBufferRef)audioSample {
+    //
+    NSInteger audioDataSize = CMSampleBufferGetTotalSampleSize(audioSample);
+    
+    int8_t *audio_data = aw_alloc((int32_t)audioDataSize);
+    
+    CMBlockBufferRef dataBuffer = CMSampleBufferGetDataBuffer(audioSample);
+    
+    CMBlockBufferCopyDataBytes(dataBuffer, 0, audioDataSize, audio_data);
+    
+    return [NSData dataWithBytesNoCopy:audio_data
+    length:audioDataSize];
+}
 @end

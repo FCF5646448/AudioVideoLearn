@@ -31,6 +31,8 @@
 		191A0DC723B8EE6E0076BAFF /* libx264.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 191A0D9823B8EE6E0076BAFF /* libx264.a */; };
 		191A0DC823B8EE6E0076BAFF /* librtmp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 191A0DA023B8EE6E0076BAFF /* librtmp.a */; };
 		191A0DC923B8EE6E0076BAFF /* libyuv.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 191A0DB823B8EE6E0076BAFF /* libyuv.a */; };
+		192D3D7223B9E94700EEF4A0 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 192D3D7123B9E94700EEF4A0 /* VideoToolbox.framework */; };
+		192D3D7523B9E96C00EEF4A0 /* VideoToolBoxManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 192D3D7423B9E96C00EEF4A0 /* VideoToolBoxManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -105,6 +107,9 @@
 		191A0DB523B8EE6E0076BAFF /* rotate_argb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rotate_argb.h; sourceTree = "<group>"; };
 		191A0DB623B8EE6E0076BAFF /* row.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = row.h; sourceTree = "<group>"; };
 		191A0DB823B8EE6E0076BAFF /* libyuv.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libyuv.a; sourceTree = "<group>"; };
+		192D3D7123B9E94700EEF4A0 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		192D3D7323B9E96C00EEF4A0 /* VideoToolBoxManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoToolBoxManager.h; sourceTree = "<group>"; };
+		192D3D7423B9E96C00EEF4A0 /* VideoToolBoxManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoToolBoxManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				192D3D7223B9E94700EEF4A0 /* VideoToolbox.framework in Frameworks */,
 				191A0DC623B8EE6E0076BAFF /* libfaac.a in Frameworks */,
 				191A0DC723B8EE6E0076BAFF /* libx264.a in Frameworks */,
 				191A0DC923B8EE6E0076BAFF /* libyuv.a in Frameworks */,
@@ -128,6 +134,7 @@
 				191A0D6823B8EE6E0076BAFF /* clibs */,
 				191A0CEC23B8B00E0076BAFF /* 直播客户端实现 */,
 				191A0CEB23B8B00E0076BAFF /* Products */,
+				192D3D7023B9E94600EEF4A0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,6 +154,8 @@
 				191A0CF123B8B00E0076BAFF /* ViewController.swift */,
 				191A0D0223B8E2D70076BAFF /* PixelBufferTool.h */,
 				191A0D0323B8E2D70076BAFF /* PixelBufferTool.m */,
+				192D3D7323B9E96C00EEF4A0 /* VideoToolBoxManager.h */,
+				192D3D7423B9E96C00EEF4A0 /* VideoToolBoxManager.m */,
 				191A0CF323B8B00E0076BAFF /* Main.storyboard */,
 				191A0CF623B8B00E0076BAFF /* Assets.xcassets */,
 				191A0CF823B8B00E0076BAFF /* LaunchScreen.storyboard */,
@@ -383,6 +392,14 @@
 			path = lib;
 			sourceTree = "<group>";
 		};
+		192D3D7023B9E94600EEF4A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				192D3D7123B9E94700EEF4A0 /* VideoToolbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -462,6 +479,7 @@
 				191A0CEE23B8B00E0076BAFF /* AppDelegate.swift in Sources */,
 				191A0DC523B8EE6E0076BAFF /* aw_array.c in Sources */,
 				191A0DC423B8EE6E0076BAFF /* aw_dict.c in Sources */,
+				192D3D7523B9E96C00EEF4A0 /* VideoToolBoxManager.m in Sources */,
 				191A0DC123B8EE6E0076BAFF /* aw_thread_poll.c in Sources */,
 				191A0D0423B8E2D70076BAFF /* PixelBufferTool.m in Sources */,
 				191A0DBD23B8EE6E0076BAFF /* aw_faac.c in Sources */,

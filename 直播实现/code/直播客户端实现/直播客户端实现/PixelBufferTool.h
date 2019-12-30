@@ -13,10 +13,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface PixelBufferTool : NSObject
 
-+ (NSDate *)convertVideoSampleBufferToYuvData:(CMSampleBufferRef)videoSample;
++ (NSData *)convertVideoSampleBufferToYuvData:(CMSampleBufferRef)videoSample;
 
-//+ (NSDate *)convertVideoSampleBufferToYuvData:(CMSampleBufferRef)videoSample;
-
++ (NSData *)convertAudioSampleBufferToPCMData:(CMSampleBufferRef)audioSample;
 
 @end
 

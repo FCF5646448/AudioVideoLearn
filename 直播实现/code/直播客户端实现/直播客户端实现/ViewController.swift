@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var positionBtn: UIButton!
     
+    @IBOutlet weak var capBtn: UIButton!
     
     // 创建Session对象
     private let captureSession = AVCaptureSession()
@@ -30,6 +31,7 @@ class ViewController: UIViewController {
     // 设置Output
     var videoOutput:AVCaptureVideoDataOutput?
     var audioOutput:AVCaptureAudioDataOutput?
+    let captureQueue =  DispatchQueue.global(qos: .default) //DispatchQueue.global(priority: DispatchQueue.GlobalQueuePriority.default)
 
     
     override func viewDidLoad() {
@@ -65,6 +67,16 @@ class ViewController: UIViewController {
         //重置vidoe输入：
         setCameraInput()
     }
+    
+    @IBAction func capBtnAction(_ sender: Any) {
+        capBtn.isSelected = !capBtn.isSelected
+        if capBtn.isSelected {
+            self.captureSession.stopRunning()
+        }else{
+            self.captureSession.startRunning()
+        }
+    }
+    
     
 
 }
@@ -172,9 +184,6 @@ extension ViewController {
     
     //设置输出
     func setOutput() {
-
-        let captureQueue = DispatchQueue.global(qos: DispatchQoS.QoSClass.userInitiated)
-        
         
         self.videoOutput = AVCaptureVideoDataOutput()
         //设置代理
@@ -187,7 +196,8 @@ extension ViewController {
         if self.captureSession.canAddOutput(self.videoOutput!) {
             self.captureSession.addOutput(self.videoOutput!)
         }
-        
+        let connection = self.videoOutput?.connection(with: AVMediaType.video)
+        connection?.videoOrientation = AVCaptureVideoOrientation.portrait
         
         //音频输出
         self.audioOutput = AVCaptureAudioDataOutput()
@@ -195,6 +205,7 @@ extension ViewController {
         if self.captureSession.canAddOutput(self.audioOutput!) {
             self.captureSession.addOutput(self.audioOutput!)
         }
+        
         
     }
     
@@ -272,7 +283,9 @@ extension ViewController : AVCaptureVideoDataOutputSampleBufferDelegate {
 
 extension ViewController : AVCaptureAudioDataOutputSampleBufferDelegate {
     func captureOutput(_ output: AVCaptureOutput, didOutput sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
-        
+        captureQueue.sync {
+            VideoToolBoxManager.shareInstance().encode(sampleBuffer)
+        }
     }
 }
 
