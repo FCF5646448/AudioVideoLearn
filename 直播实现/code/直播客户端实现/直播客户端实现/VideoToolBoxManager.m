@@ -64,56 +64,6 @@ static VideoToolBoxManager * instance = nil;
     }
 }
 
-
-//
-- (void)createVideoToolBox {
-    dispatch_sync(encodeQueue, ^{
-        frameNO = 0;
-        OSStatus status = VTCompressionSessionCreate(NULL,
-                                                     480,
-                                                     640,
-                                                     kCMVideoCodecType_H264,
-                                                     NULL,
-                                                     NULL,
-                                                     NULL,
-                                                     didCompressH264,
-                                                     (__bridge void *)(self),
-                                                     &encodingSession);
-        if (status == noErr) {
-            //设置实时编码输出
-            VTSessionSetProperty(encodingSession, kVTCompressionPropertyKey_RealTime, kCFBooleanTrue);
-            // ProfileLevel，h264的协议等级，不同的清晰度使用不同的ProfileLevel。
-            VTSessionSetProperty(encodingSession, kVTCompressionPropertyKey_ProfileLevel, kVTProfileLevel_H264_Main_AutoLevel);
-            
-            //设置关键帧间隔
-            int framwInterval = 24;
-            CFNumberRef frameIntervalRef = CFNumberCreate(kCFAllocatorDefault, kCFNumberIntType, &framwInterval);
-            VTSessionSetProperty(encodingSession, kVTCompressionPropertyKey_MaxKeyFrameInterval, frameIntervalRef);
-            
-            //设置期望帧率
-            int fps = 24;
-            CFNumberRef fpsRef = CFNumberCreate(kCFAllocatorDefault, kCFNumberIntType, &fps);
-            VTSessionSetProperty(encodingSession, kVTCompressionPropertyKey_ExpectedFrameRate, fpsRef);
-            
-            //设置码率，均值
-            int bitRate = 480*640 * 3 * 4 * 8;
-            CFNumberRef bitRateRef = CFNumberCreate(kCFAllocatorDefault, kCFNumberSInt32Type, &bitRate);
-            VTSessionSetProperty(encodingSession, kVTCompressionPropertyKey_AverageBitRate, bitRateRef);
-            
-            //设置码率，上限
-            int bitRateLimit = 480*640 * 3 * 4;
-            CFNumberRef bitRateLimitRef = CFNumberCreate(kCFAllocatorDefault, kCFNumberSInt32Type, &bitRateLimit);
-            VTSessionSetProperty(encodingSession, kVTCompressionPropertyKey_DataRateLimits, bitRateLimitRef);
-            
-            //开始编码
-            VTCompressionSessionPrepareToEncodeFrames(encodingSession);
-            
-        }else{
-            NSLog(@"H264 session create failed");
-        }
-    });
-}
-
 //编码完成 c语言函数回调
 void didCompressH264(void * outputCallbackRefCon,void * sourceFrameRefCon,OSStatus status,VTEncodeInfoFlags infoFlags,CMSampleBufferRef sampleBuffer) {
     NSLog(@"didCompressH264 called with status:%d infoFlags %d",status,infoFlags);
@@ -183,11 +133,62 @@ void didCompressH264(void * outputCallbackRefCon,void * sourceFrameRefCon,OSStat
     }
 }
 
+//
+- (void)createVideoToolBox {
+    dispatch_sync(encodeQueue, ^{
+        frameNO = 0;
+        OSStatus status = VTCompressionSessionCreate(NULL,
+                                                     480,
+                                                     640,
+                                                     kCMVideoCodecType_H264,
+                                                     NULL,
+                                                     NULL,
+                                                     NULL,
+                                                     didCompressH264,
+                                                     (__bridge void *)(self),
+                                                     &encodingSession);
+        if (status == noErr) {
+            //设置实时编码输出
+            VTSessionSetProperty(encodingSession, kVTCompressionPropertyKey_RealTime, kCFBooleanTrue);
+            // ProfileLevel，h264的协议等级，不同的清晰度使用不同的ProfileLevel。
+            VTSessionSetProperty(encodingSession, kVTCompressionPropertyKey_ProfileLevel, kVTProfileLevel_H264_Baseline_AutoLevel); //kVTProfileLevel_H264_Main_AutoLevel
+            
+            //设置关键帧间隔
+            int framwInterval = 24;
+            CFNumberRef frameIntervalRef = CFNumberCreate(kCFAllocatorDefault, kCFNumberIntType, &framwInterval);
+            VTSessionSetProperty(encodingSession, kVTCompressionPropertyKey_MaxKeyFrameInterval, frameIntervalRef);
+            
+            //设置期望帧率
+            int fps = 24;
+            CFNumberRef fpsRef = CFNumberCreate(kCFAllocatorDefault, kCFNumberIntType, &fps);
+            VTSessionSetProperty(encodingSession, kVTCompressionPropertyKey_ExpectedFrameRate, fpsRef);
+            
+            //设置码率，均值
+            int bitRate = 480*640 * 3 * 4 * 8;
+            CFNumberRef bitRateRef = CFNumberCreate(kCFAllocatorDefault, kCFNumberSInt32Type, &bitRate);
+            VTSessionSetProperty(encodingSession, kVTCompressionPropertyKey_AverageBitRate, bitRateRef);
+            
+            //设置码率，上限
+            int bitRateLimit = 480*640 * 3 * 4;
+            CFNumberRef bitRateLimitRef = CFNumberCreate(kCFAllocatorDefault, kCFNumberSInt32Type, &bitRateLimit);
+            VTSessionSetProperty(encodingSession, kVTCompressionPropertyKey_DataRateLimits, bitRateLimitRef);
+            
+            //开始编码
+            VTCompressionSessionPrepareToEncodeFrames(encodingSession);
+            
+        }else{
+            NSLog(@"H264 session create failed");
+        }
+    });
+}
+
+
+
 //开始编码
 - (void)encode:(CMSampleBufferRef)sampleBuffer {
     //先获取CVImageBufferRef数据
     //这里包含了yuv420数据的指针
-    CVImageBufferRef pixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer);
+    CVImageBufferRef pixelBuffer = (CVImageBufferRef)CMSampleBufferGetImageBuffer(sampleBuffer);
     
     CMTime presentationTimesStamp = CMTimeMake(frameNO++, 1000);
     
@@ -202,7 +203,7 @@ void didCompressH264(void * outputCallbackRefCon,void * sourceFrameRefCon,OSStat
     
     if (status != noErr) {
         NSLog(@"failed code:%d",status);
-        
+        //报错 failed code:-12902 这个是指level层不匹配导致的
         VTCompressionSessionInvalidate(encodingSession);
         CFRelease(encodingSession);
         encodingSession = NULL;

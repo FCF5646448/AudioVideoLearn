@@ -118,7 +118,7 @@ extension ViewController {
         
         //
         setCameraInput()
-        setAudioInput()
+//        setAudioInput()
         
         //
         setOutput()
