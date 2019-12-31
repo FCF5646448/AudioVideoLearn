@@ -133,7 +133,7 @@ void didCompressH264(void * outputCallbackRefCon,void * sourceFrameRefCon,OSStat
     }
 }
 
-//
+//创建
 - (void)createVideoToolBox {
     dispatch_sync(encodeQueue, ^{
         frameNO = 0;
@@ -242,7 +242,7 @@ void didCompressH264(void * outputCallbackRefCon,void * sourceFrameRefCon,OSStat
     }
 }
 
-
+//编码结束
 - (void)endVIdeoToolBox {
     VTCompressionSessionCompleteFrames(encodingSession, kCMTimeInvalid);
     VTCompressionSessionInvalidate(encodingSession);
