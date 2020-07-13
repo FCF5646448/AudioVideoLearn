@@ -7,3 +7,5 @@ AudioToolBox是苹果用于音频硬编码的API。
 * 转码；
 * 得到AAC编码数据后，添加ADTS头。ADTS头用于区分每个AAC数据帧；
 
+
+

@@ -33,6 +33,8 @@
 		191A0DC923B8EE6E0076BAFF /* libyuv.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 191A0DB823B8EE6E0076BAFF /* libyuv.a */; };
 		192D3D7223B9E94700EEF4A0 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 192D3D7123B9E94700EEF4A0 /* VideoToolbox.framework */; };
 		192D3D7523B9E96C00EEF4A0 /* VideoToolBoxManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 192D3D7423B9E96C00EEF4A0 /* VideoToolBoxManager.m */; };
+		194A50B823BDC95F00EC1E5E /* AudioToolBoxManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 194A50B723BDC95F00EC1E5E /* AudioToolBoxManager.m */; };
+		194A50BA23BDEFB000EC1E5E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 194A50B923BDEFB000EC1E5E /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -110,6 +112,9 @@
 		192D3D7123B9E94700EEF4A0 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
 		192D3D7323B9E96C00EEF4A0 /* VideoToolBoxManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoToolBoxManager.h; sourceTree = "<group>"; };
 		192D3D7423B9E96C00EEF4A0 /* VideoToolBoxManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoToolBoxManager.m; sourceTree = "<group>"; };
+		194A50B623BDC95F00EC1E5E /* AudioToolBoxManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioToolBoxManager.h; sourceTree = "<group>"; };
+		194A50B723BDC95F00EC1E5E /* AudioToolBoxManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioToolBoxManager.m; sourceTree = "<group>"; };
+		194A50B923BDEFB000EC1E5E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				194A50BA23BDEFB000EC1E5E /* AudioToolbox.framework in Frameworks */,
 				192D3D7223B9E94700EEF4A0 /* VideoToolbox.framework in Frameworks */,
 				191A0DC623B8EE6E0076BAFF /* libfaac.a in Frameworks */,
 				191A0DC723B8EE6E0076BAFF /* libx264.a in Frameworks */,
@@ -156,6 +162,8 @@
 				191A0D0323B8E2D70076BAFF /* PixelBufferTool.m */,
 				192D3D7323B9E96C00EEF4A0 /* VideoToolBoxManager.h */,
 				192D3D7423B9E96C00EEF4A0 /* VideoToolBoxManager.m */,
+				194A50B623BDC95F00EC1E5E /* AudioToolBoxManager.h */,
+				194A50B723BDC95F00EC1E5E /* AudioToolBoxManager.m */,
 				191A0CF323B8B00E0076BAFF /* Main.storyboard */,
 				191A0CF623B8B00E0076BAFF /* Assets.xcassets */,
 				191A0CF823B8B00E0076BAFF /* LaunchScreen.storyboard */,
@@ -395,6 +403,7 @@
 		192D3D7023B9E94600EEF4A0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				194A50B923BDEFB000EC1E5E /* AudioToolbox.framework */,
 				192D3D7123B9E94700EEF4A0 /* VideoToolbox.framework */,
 			);
 			name = Frameworks;
@@ -489,6 +498,7 @@
 				191A0DBC23B8EE6E0076BAFF /* aw_x264.c in Sources */,
 				191A0DBF23B8EE6E0076BAFF /* aw_data.c in Sources */,
 				191A0DBB23B8EE6E0076BAFF /* aw_sw_faac_encoder.c in Sources */,
+				194A50B823BDC95F00EC1E5E /* AudioToolBoxManager.m in Sources */,
 				191A0CF023B8B00E0076BAFF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
