@@ -13,7 +13,10 @@ description:  主要学习iOS AVFoundation的整体架构。
 	* AAC：
 * Audio Session：
 AVAudioSession用来管理APP里的音频会话。当APP启动时，会自动激活一个Audio session的单例对象。不过也可以手动激活。
-Audio Session category代表音频的行为。
+	* Category 代表音频的行为。比如说AVAudioSessionCategorySoloAmbient只支持播放、AVAudioSessionCategoryRecord只支持录制等等。其次有的Category还可以根据Model进一步定制。
+	* 中断处理：比如被其他APP的音频中断的话（注意类别可以设置成是否与其他程序混用，如果不混用就会发生中断，比如打电话）。可以通过注册**AVAudioSessionInterruptionNotification**观察中断的开始和结束(通过userInfo)。
+	* 线路改变：线路改变是指输入和输出设备的改变，比如插拔耳机导致音频线路发生变化。同样通过注册**AVAudioSessionRouteChangeNotification**来监听线路变化(通过userInfo)。
+	* 
 
 #### 音频采集
 https://juejin.im/post/5d29d884f265da1b971aa220#heading-12
