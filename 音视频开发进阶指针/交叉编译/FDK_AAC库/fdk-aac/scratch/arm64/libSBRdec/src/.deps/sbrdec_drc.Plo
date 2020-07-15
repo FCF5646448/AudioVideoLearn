@@ -1,0 +1,56 @@
+libSBRdec/src/sbrdec_drc.lo: \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSBRdec/src/sbrdec_drc.cpp \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSBRdec/src/sbrdec_drc.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSBRdec/include/sbrdecoder.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/common_fix.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/FDK_archdef.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSYS/include/machine_type.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/fixmul.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/abs.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/clz.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/fixmadd.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/fixminmax.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/cplx_mul.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/scale.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSYS/include/genericStds.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/../src/scale.cpp \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/fixpoint_math.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/FDK_bitstream.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/FDK_bitbuffer.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSYS/include/FDK_audio.h
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSBRdec/src/sbrdec_drc.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSBRdec/include/sbrdecoder.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/common_fix.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/FDK_archdef.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSYS/include/machine_type.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/fixmul.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/abs.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/clz.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/fixmadd.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/fixminmax.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/cplx_mul.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/scale.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSYS/include/genericStds.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/../src/scale.cpp:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/fixpoint_math.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/FDK_bitstream.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/FDK_bitbuffer.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSYS/include/FDK_audio.h:

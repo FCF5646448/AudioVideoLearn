@@ -1,0 +1,44 @@
+libSBRenc/src/resampler.lo: \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSBRenc/src/resampler.cpp \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSBRenc/src/resampler.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/common_fix.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/FDK_archdef.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSYS/include/machine_type.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/fixmul.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/abs.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/clz.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/fixmadd.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/fixminmax.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/cplx_mul.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/scale.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSYS/include/genericStds.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/../src/scale.cpp \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/fixpoint_math.h
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSBRenc/src/resampler.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/common_fix.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/FDK_archdef.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSYS/include/machine_type.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/fixmul.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/abs.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/clz.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/fixmadd.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/fixminmax.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/cplx_mul.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/scale.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSYS/include/genericStds.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/../src/scale.cpp:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/fixpoint_math.h:

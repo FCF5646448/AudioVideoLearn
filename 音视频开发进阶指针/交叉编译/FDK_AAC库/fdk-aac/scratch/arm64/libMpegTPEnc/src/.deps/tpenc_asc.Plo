@@ -1,0 +1,29 @@
+libMpegTPEnc/src/tpenc_asc.lo: \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libMpegTPEnc/src/tpenc_asc.cpp \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libMpegTPDec/include/tp_data.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSYS/include/machine_type.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSYS/include/FDK_audio.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSYS/include/genericStds.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/FDK_bitstream.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/FDK_bitbuffer.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libMpegTPEnc/include/tpenc_lib.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libMpegTPEnc/include/tp_data.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libMpegTPEnc/src/tpenc_asc.h
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libMpegTPDec/include/tp_data.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSYS/include/machine_type.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSYS/include/FDK_audio.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSYS/include/genericStds.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/FDK_bitstream.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/FDK_bitbuffer.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libMpegTPEnc/include/tpenc_lib.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libMpegTPEnc/include/tp_data.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libMpegTPEnc/src/tpenc_asc.h:

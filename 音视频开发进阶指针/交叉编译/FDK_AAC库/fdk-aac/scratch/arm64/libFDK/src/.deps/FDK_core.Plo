@@ -1,0 +1,14 @@
+libFDK/src/FDK_core.lo: \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/src/FDK_core.cpp \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/FDK_core.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSYS/include/FDK_audio.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSYS/include/machine_type.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSYS/include/genericStds.h
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/FDK_core.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSYS/include/FDK_audio.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSYS/include/machine_type.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSYS/include/genericStds.h:

@@ -1,0 +1,140 @@
+libSBRenc/src/tran_det.lo: \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSBRenc/src/tran_det.cpp \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSBRenc/src/tran_det.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSBRenc/include/sbr_encoder.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/common_fix.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/FDK_archdef.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSYS/include/machine_type.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/fixmul.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/arm/fixmul_arm.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/abs.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/clz.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/arm/clz_arm.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/fixmadd.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/arm/fixmadd_arm.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/fixminmax.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/cplx_mul.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/arm/cplx_mul.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/scale.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSYS/include/genericStds.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/arm/scale.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/../src/scale.cpp \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/../src/arm/scale_arm.cpp \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/fixpoint_math.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSYS/include/FDK_audio.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/FDK_bitstream.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/FDK_bitbuffer.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSBRenc/src/sbr_def.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSBRenc/src/fram_gen.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSBRenc/src/sbr_ram.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSBRenc/src/env_est.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSBRenc/src/ps_main.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/qmf.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/FDK_tools_rom.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/dct.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSBRenc/src/ps_encode.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSBRenc/src/ps_const.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSBRenc/src/ps_bitenc.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/FDK_hybrid.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSBRenc/src/bit_sbr.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSBRenc/src/cmondata.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSBRenc/src/code_env.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSBRenc/src/ton_corr.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSBRenc/src/mh_det.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSBRenc/src/nf_est.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSBRenc/src/invf_est.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSBRenc/src/sbr.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSBRenc/src/resampler.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSBRenc/src/sbr_misc.h
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSBRenc/src/tran_det.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSBRenc/include/sbr_encoder.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/common_fix.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/FDK_archdef.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSYS/include/machine_type.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/fixmul.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/arm/fixmul_arm.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/abs.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/clz.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/arm/clz_arm.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/fixmadd.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/arm/fixmadd_arm.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/fixminmax.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/cplx_mul.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/arm/cplx_mul.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/scale.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSYS/include/genericStds.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/arm/scale.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/../src/scale.cpp:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/../src/arm/scale_arm.cpp:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/fixpoint_math.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSYS/include/FDK_audio.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/FDK_bitstream.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/FDK_bitbuffer.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSBRenc/src/sbr_def.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSBRenc/src/fram_gen.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSBRenc/src/sbr_ram.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSBRenc/src/env_est.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSBRenc/src/ps_main.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/qmf.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/FDK_tools_rom.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/dct.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSBRenc/src/ps_encode.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSBRenc/src/ps_const.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSBRenc/src/ps_bitenc.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/FDK_hybrid.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSBRenc/src/bit_sbr.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSBRenc/src/cmondata.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSBRenc/src/code_env.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSBRenc/src/ton_corr.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSBRenc/src/mh_det.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSBRenc/src/nf_est.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSBRenc/src/invf_est.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSBRenc/src/sbr.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSBRenc/src/resampler.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSBRenc/src/sbr_misc.h:

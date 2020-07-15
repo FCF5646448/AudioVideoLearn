@@ -1,0 +1,128 @@
+libAACdec/src/aacdec_hcr.lo: \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libAACdec/src/aacdec_hcr.cpp \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libAACdec/src/aacdec_hcr.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libAACdec/src/channelinfo.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/common_fix.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/FDK_archdef.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSYS/include/machine_type.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/fixmul.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/abs.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/clz.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/fixmadd.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/fixminmax.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/cplx_mul.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/scale.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSYS/include/genericStds.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/../src/scale.cpp \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/fixpoint_math.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libAACdec/src/aac_rom.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSYS/include/FDK_audio.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libAACdec/src/aacdec_hcr_types.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/FDK_bitstream.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/FDK_bitbuffer.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libAACdec/src/overlapadd.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libAACdec/src/aacdec_hcrs.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libAACdec/include/aacdecoder_lib.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/mdct.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libAACdec/src/stereo.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libAACdec/src/pulsedata.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libAACdec/src/aacdec_tns.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libAACdec/src/aacdec_pns.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libAACdec/src/rvlc_info.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libAACdec/src/conceal_types.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libAACdec/src/aacdec_drc_types.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libAACdec/src/aacdec_hcr_bit.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libAACdec/src/aac_ram.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libAACdec/src/aacdecoder.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libAACdec/src/channel.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libMpegTPDec/include/tpdec_lib.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libMpegTPDec/include/tp_data.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libAACdec/src/block.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSBRdec/include/sbrdecoder.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libAACdec/src/aacdec_drc.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libPCMutils/include/pcmutils_lib.h \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libPCMutils/include/limiter.h
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libAACdec/src/aacdec_hcr.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libAACdec/src/channelinfo.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/common_fix.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/FDK_archdef.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSYS/include/machine_type.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/fixmul.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/abs.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/clz.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/fixmadd.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/fixminmax.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/cplx_mul.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/scale.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSYS/include/genericStds.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/../src/scale.cpp:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/fixpoint_math.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libAACdec/src/aac_rom.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSYS/include/FDK_audio.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libAACdec/src/aacdec_hcr_types.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/FDK_bitstream.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/FDK_bitbuffer.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libAACdec/src/overlapadd.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libAACdec/src/aacdec_hcrs.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libAACdec/include/aacdecoder_lib.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libFDK/include/mdct.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libAACdec/src/stereo.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libAACdec/src/pulsedata.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libAACdec/src/aacdec_tns.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libAACdec/src/aacdec_pns.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libAACdec/src/rvlc_info.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libAACdec/src/conceal_types.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libAACdec/src/aacdec_drc_types.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libAACdec/src/aacdec_hcr_bit.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libAACdec/src/aac_ram.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libAACdec/src/aacdecoder.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libAACdec/src/channel.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libMpegTPDec/include/tpdec_lib.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libMpegTPDec/include/tp_data.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libAACdec/src/block.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libSBRdec/include/sbrdecoder.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libAACdec/src/aacdec_drc.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libPCMutils/include/pcmutils_lib.h:
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libPCMutils/include/limiter.h:

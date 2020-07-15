@@ -1,0 +1,5 @@
+libAACenc/src/aacenc_hcr.lo: \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libAACenc/src/aacenc_hcr.cpp \
+  /Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libAACenc/src/aacenc_hcr.h
+
+/Users/fan/Desktop/fdk-aac/fdk-aac-0.1.4/libAACenc/src/aacenc_hcr.h:
