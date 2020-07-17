@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3116B79624BE86D700472D7E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3116B79524BE86D700472D7E /* AppDelegate.m */; };
+		3116B79924BE86D700472D7E /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3116B79824BE86D700472D7E /* SceneDelegate.m */; };
+		3116B79C24BE86D700472D7E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3116B79B24BE86D700472D7E /* ViewController.m */; };
+		3116B79F24BE86D700472D7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3116B79D24BE86D700472D7E /* Main.storyboard */; };
+		3116B7A124BE86D900472D7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3116B7A024BE86D900472D7E /* Assets.xcassets */; };
+		3116B7A424BE86D900472D7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3116B7A224BE86D900472D7E /* LaunchScreen.storyboard */; };
+		3116B7A724BE86D900472D7E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3116B7A624BE86D900472D7E /* main.m */; };
+		3116B7B024BE870E00472D7E /* mp3_encoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3116B7AE24BE870E00472D7E /* mp3_encoder.cpp */; };
+		3116B7BE24BE893800472D7E /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3116B7BD24BE893800472D7E /* libmp3lame.a */; };
+		311A6A1E24BFD5A700C58B3E /* Encoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 311A6A1D24BFD5A700C58B3E /* Encoder.m */; };
+		311A6A2324BFD75C00C58B3E /* Mp3Encoder.mm in Sources */ = {isa = PBXBuildFile; fileRef = 311A6A2224BFD75C00C58B3E /* Mp3Encoder.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		311A6A2424BFDEB500C58B3E /* hurt.pcm in Resources */ = {isa = PBXBuildFile; fileRef = 311A6A1B24BFD41300C58B3E /* hurt.pcm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3116B79124BE86D700472D7E /* LAMEMp3Encoder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LAMEMp3Encoder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3116B79424BE86D700472D7E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3116B79524BE86D700472D7E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3116B79724BE86D700472D7E /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		3116B79824BE86D700472D7E /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		3116B79A24BE86D700472D7E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3116B79B24BE86D700472D7E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3116B79E24BE86D700472D7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3116B7A024BE86D900472D7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3116B7A324BE86D900472D7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3116B7A524BE86D900472D7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3116B7A624BE86D900472D7E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3116B7AE24BE870E00472D7E /* mp3_encoder.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = mp3_encoder.cpp; sourceTree = "<group>"; };
+		3116B7AF24BE870E00472D7E /* mp3_encoder.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = mp3_encoder.hpp; sourceTree = "<group>"; };
+		3116B7BB24BE893800472D7E /* lame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lame.h; sourceTree = "<group>"; };
+		3116B7BD24BE893800472D7E /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmp3lame.a; sourceTree = "<group>"; };
+		311A6A1B24BFD41300C58B3E /* hurt.pcm */ = {isa = PBXFileReference; lastKnownFileType = file; path = hurt.pcm; sourceTree = "<group>"; };
+		311A6A1C24BFD5A700C58B3E /* Encoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Encoder.h; sourceTree = "<group>"; };
+		311A6A1D24BFD5A700C58B3E /* Encoder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Encoder.m; sourceTree = "<group>"; };
+		311A6A1F24BFD6D300C58B3E /* Mp3Encoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mp3Encoder.h; sourceTree = "<group>"; };
+		311A6A2224BFD75C00C58B3E /* Mp3Encoder.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Mp3Encoder.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3116B78E24BE86D700472D7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3116B7BE24BE893800472D7E /* libmp3lame.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3116B78824BE86D700472D7E = {
+			isa = PBXGroup;
+			children = (
+				3116B79324BE86D700472D7E /* LAMEMp3Encoder */,
+				3116B79224BE86D700472D7E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3116B79224BE86D700472D7E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3116B79124BE86D700472D7E /* LAMEMp3Encoder.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3116B79324BE86D700472D7E /* LAMEMp3Encoder */ = {
+			isa = PBXGroup;
+			children = (
+				3116B7B824BE893800472D7E /* fat-lame */,
+				3116B7AD24BE86ED00472D7E /* encoder */,
+				3116B79424BE86D700472D7E /* AppDelegate.h */,
+				3116B79524BE86D700472D7E /* AppDelegate.m */,
+				3116B79724BE86D700472D7E /* SceneDelegate.h */,
+				3116B79824BE86D700472D7E /* SceneDelegate.m */,
+				3116B79A24BE86D700472D7E /* ViewController.h */,
+				3116B79B24BE86D700472D7E /* ViewController.m */,
+				3116B79D24BE86D700472D7E /* Main.storyboard */,
+				3116B7A024BE86D900472D7E /* Assets.xcassets */,
+				3116B7A224BE86D900472D7E /* LaunchScreen.storyboard */,
+				3116B7A524BE86D900472D7E /* Info.plist */,
+				3116B7A624BE86D900472D7E /* main.m */,
+				311A6A1B24BFD41300C58B3E /* hurt.pcm */,
+				311A6A1C24BFD5A700C58B3E /* Encoder.h */,
+				311A6A1D24BFD5A700C58B3E /* Encoder.m */,
+			);
+			path = LAMEMp3Encoder;
+			sourceTree = "<group>";
+		};
+		3116B7AD24BE86ED00472D7E /* encoder */ = {
+			isa = PBXGroup;
+			children = (
+				3116B7AE24BE870E00472D7E /* mp3_encoder.cpp */,
+				3116B7AF24BE870E00472D7E /* mp3_encoder.hpp */,
+				311A6A1F24BFD6D300C58B3E /* Mp3Encoder.h */,
+				311A6A2224BFD75C00C58B3E /* Mp3Encoder.mm */,
+			);
+			path = encoder;
+			sourceTree = "<group>";
+		};
+		3116B7B824BE893800472D7E /* fat-lame */ = {
+			isa = PBXGroup;
+			children = (
+				3116B7B924BE893800472D7E /* include */,
+				3116B7BC24BE893800472D7E /* lib */,
+			);
+			path = "fat-lame";
+			sourceTree = "<group>";
+		};
+		3116B7B924BE893800472D7E /* include */ = {
+			isa = PBXGroup;
+			children = (
+				3116B7BA24BE893800472D7E /* lame */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		3116B7BA24BE893800472D7E /* lame */ = {
+			isa = PBXGroup;
+			children = (
+				3116B7BB24BE893800472D7E /* lame.h */,
+			);
+			path = lame;
+			sourceTree = "<group>";
+		};
+		3116B7BC24BE893800472D7E /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				3116B7BD24BE893800472D7E /* libmp3lame.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3116B79024BE86D700472D7E /* LAMEMp3Encoder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3116B7AA24BE86D900472D7E /* Build configuration list for PBXNativeTarget "LAMEMp3Encoder" */;
+			buildPhases = (
+				3116B78D24BE86D700472D7E /* Sources */,
+				3116B78E24BE86D700472D7E /* Frameworks */,
+				3116B78F24BE86D700472D7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LAMEMp3Encoder;
+			productName = LAMEMp3Encoder;
+			productReference = 3116B79124BE86D700472D7E /* LAMEMp3Encoder.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3116B78924BE86D700472D7E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "冯才凡";
+				TargetAttributes = {
+					3116B79024BE86D700472D7E = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 3116B78C24BE86D700472D7E /* Build configuration list for PBXProject "LAMEMp3Encoder" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3116B78824BE86D700472D7E;
+			productRefGroup = 3116B79224BE86D700472D7E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3116B79024BE86D700472D7E /* LAMEMp3Encoder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3116B78F24BE86D700472D7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				311A6A2424BFDEB500C58B3E /* hurt.pcm in Resources */,
+				3116B7A424BE86D900472D7E /* LaunchScreen.storyboard in Resources */,
+				3116B7A124BE86D900472D7E /* Assets.xcassets in Resources */,
+				3116B79F24BE86D700472D7E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3116B78D24BE86D700472D7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				311A6A1E24BFD5A700C58B3E /* Encoder.m in Sources */,
+				3116B79C24BE86D700472D7E /* ViewController.m in Sources */,
+				3116B7B024BE870E00472D7E /* mp3_encoder.cpp in Sources */,
+				3116B79624BE86D700472D7E /* AppDelegate.m in Sources */,
+				311A6A2324BFD75C00C58B3E /* Mp3Encoder.mm in Sources */,
+				3116B7A724BE86D900472D7E /* main.m in Sources */,
+				3116B79924BE86D700472D7E /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3116B79D24BE86D700472D7E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3116B79E24BE86D700472D7E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3116B7A224BE86D900472D7E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3116B7A324BE86D900472D7E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3116B7A824BE86D900472D7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3116B7A924BE86D900472D7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3116B7AB24BE86D900472D7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/LAMEMp3Encoder/fat-lame/include/lame";
+				INFOPLIST_FILE = LAMEMp3Encoder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LAMEMp3Encoder/fat-lame/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fcf.test.LAMEMp3Encoder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3116B7AC24BE86D900472D7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/LAMEMp3Encoder/fat-lame/include/lame";
+				INFOPLIST_FILE = LAMEMp3Encoder/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LAMEMp3Encoder/fat-lame/lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fcf.test.LAMEMp3Encoder;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3116B78C24BE86D700472D7E /* Build configuration list for PBXProject "LAMEMp3Encoder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3116B7A824BE86D900472D7E /* Debug */,
+				3116B7A924BE86D900472D7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3116B7AA24BE86D900472D7E /* Build configuration list for PBXNativeTarget "LAMEMp3Encoder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3116B7AB24BE86D900472D7E /* Debug */,
+				3116B7AC24BE86D900472D7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3116B78924BE86D700472D7E /* Project object */;
+}
