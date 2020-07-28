@@ -11,8 +11,7 @@
 
 #include <stdio.h>
 
-
-void test(void);
+void set_status(int status);
 
 void capAudio(void);
 

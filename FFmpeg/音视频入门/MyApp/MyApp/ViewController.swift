@@ -10,10 +10,12 @@ import Cocoa
 
 class ViewController: NSViewController {
 
+    @IBOutlet weak var btn: NSButton!
+    
+    var btnSelected = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        capAudio()
     }
 
     override var representedObject: Any? {
@@ -22,6 +24,20 @@ class ViewController: NSViewController {
         }
     }
 
-
+    @IBAction func capAudioBtnAcion(_ sender: Any) {
+        btnSelected = !btnSelected
+        if btnSelected {
+            btn.title = "停止录制"
+            DispatchQueue.global().async {
+                capAudio()
+            }
+            
+        }else{
+            set_status(0);
+            btn.title = "开始录制"
+        }
+        
+    }
+    
 }
 

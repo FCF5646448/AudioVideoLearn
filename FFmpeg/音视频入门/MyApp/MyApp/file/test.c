@@ -16,17 +16,16 @@
 
 
 
-
-void test(void) {
-    
-    av_log_set_level(AV_LOG_DEBUG);
-    av_log(NULL, AV_LOG_DEBUG, "hello ffmpeg！\n");
-    
-    printf("hello world!\n");
+static int rec_status = 0;
+void set_status(int status) {
+    rec_status = status;
 }
 
 //采集音频
 void capAudio(void) {
+    
+    av_log_set_level(AV_LOG_DEBUG);
+    
     //1、注册设备
     avdevice_register_all();
     
@@ -50,9 +49,33 @@ void capAudio(void) {
         return;
     }
     
-    printf("file:%s, size:%d",fmt_ctx->url,fmt_ctx->packet_size);
+    //创建文件 "wb"表示写入二进制数据，“+”表示文件不存在就创建
+    const char *out_path = "/Users/fan/Downloads/audio.pcm";
+    FILE *out_file = fopen(out_path, "wb+");
     
     
-    //
+    rec_status = 1;
+    //读取数据
+    AVPacket pkt;
+    av_init_packet(&pkt);
+    while ((ret = av_read_frame(fmt_ctx, &pkt)) == 0  && rec_status == 1 ) {
+        av_log(NULL, AV_LOG_DEBUG,
+               "pkt size is %d(%p)\n",
+               pkt.size,pkt.data);
+        
+        //将数据写入文件中
+        fwrite(pkt.data, pkt.size, 1, out_file);
+        //因为写文件是先写入缓存区，但是如果断电等异常出现，则会丢失。使用fflush及时更新文件
+        fflush(out_file);
+        
+        av_packet_unref(&pkt);
+    }
     
+    //关闭文件
+    fclose(out_file);
+    
+    //释放上下文
+    avformat_close_input(&fmt_ctx);
+    av_log(NULL, AV_LOG_DEBUG,"finished!\n");
 }
+
