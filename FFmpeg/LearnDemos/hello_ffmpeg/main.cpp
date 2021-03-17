@@ -3,7 +3,7 @@
 #include <QDebug>
 
 // 必须使用这个extern包一层，否则会报错
-//#include <libavcodec/avcodec.h>
+// C++不能直接使用C语言函数，要使用这个包一层
 extern "C" {
     #include <libavcodec/avcodec.h>
 }
@@ -11,6 +11,7 @@ extern "C" {
 
 int main(int argc, char *argv[])
 {
+    qputenv("QT_SCALE_FACTOR", QByteArray("1"));
 
     qDebug() << av_version_info();
 
