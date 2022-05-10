@@ -11,7 +11,6 @@
 		3111F4F726C8C39D00F9733F /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3111F4F626C8C39D00F9733F /* OpenGL.framework */; };
 		3111F4F926C8C4B300F9733F /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3111F4F826C8C4B300F9733F /* libglfw.3.3.dylib */; };
 		3111F4FB26C8C4ED00F9733F /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = 3111F4FA26C8C4ED00F9733F /* glad.c */; };
-		31709B0826CB317F00CD23F3 /* DrawTriangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 31709B0626CB317F00CD23F3 /* DrawTriangle.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,8 +31,6 @@
 		3111F4F626C8C39D00F9733F /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		3111F4F826C8C4B300F9733F /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../../../../../usr/local/Cellar/glfw/3.3.4/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
 		3111F4FA26C8C4ED00F9733F /* glad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = glad.c; sourceTree = "<group>"; };
-		31709B0626CB317F00CD23F3 /* DrawTriangle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DrawTriangle.cpp; sourceTree = "<group>"; };
-		31709B0726CB317F00CD23F3 /* DrawTriangle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = DrawTriangle.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +68,6 @@
 			children = (
 				3111F4FA26C8C4ED00F9733F /* glad.c */,
 				3111F4EE26C8C0AC00F9733F /* main.cpp */,
-				31709B0626CB317F00CD23F3 /* DrawTriangle.cpp */,
-				31709B0726CB317F00CD23F3 /* DrawTriangle.hpp */,
 			);
 			path = OpenGL001;
 			sourceTree = "<group>";
@@ -144,7 +139,6 @@
 			files = (
 				3111F4EF26C8C0AC00F9733F /* main.cpp in Sources */,
 				3111F4FB26C8C4ED00F9733F /* glad.c in Sources */,
-				31709B0826CB317F00CD23F3 /* DrawTriangle.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

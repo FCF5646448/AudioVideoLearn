@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3157084D27F673C90077E727 /* Triangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3157084B27F673C90077E727 /* Triangle.cpp */; };
 		319C16B827F5273700E447D6 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 319C16B727F5273700E447D6 /* main.cpp */; };
 		319C16C027F5289900E447D6 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 319C16BF27F5289900E447D6 /* OpenGL.framework */; };
 		319C16C227F5291000E447D6 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 319C16C127F5291000E447D6 /* libglfw.3.3.dylib */; };
@@ -27,8 +26,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		3157084B27F673C90077E727 /* Triangle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Triangle.cpp; sourceTree = "<group>"; };
-		3157084C27F673C90077E727 /* Triangle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Triangle.hpp; sourceTree = "<group>"; };
 		319C16B427F5273700E447D6 /* 绘制三角形 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "绘制三角形"; sourceTree = BUILT_PRODUCTS_DIR; };
 		319C16B727F5273700E447D6 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		319C16BF27F5289900E447D6 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
@@ -71,8 +68,6 @@
 			children = (
 				319C16C327F5296A00E447D6 /* glad.c */,
 				319C16B727F5273700E447D6 /* main.cpp */,
-				3157084B27F673C90077E727 /* Triangle.cpp */,
-				3157084C27F673C90077E727 /* Triangle.hpp */,
 			);
 			path = "绘制三角形";
 			sourceTree = "<group>";
@@ -144,7 +139,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				319C16B827F5273700E447D6 /* main.cpp in Sources */,
-				3157084D27F673C90077E727 /* Triangle.cpp in Sources */,
 				319C16C427F5296A00E447D6 /* glad.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
