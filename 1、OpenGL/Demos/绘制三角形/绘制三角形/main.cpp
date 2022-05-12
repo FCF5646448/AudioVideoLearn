@@ -112,16 +112,24 @@ int main(int argc, const char * argv[]) {
     // 设置顶点数据（和缓冲区）并配置顶点属性
     // --------------------------------------------------------
     float vertices[] = {
-       -0.5f, -0.5f, 0.0f, // left
-       0.5f, -0.5f, 0.0f, // right
-       0.0f, 0.5f, 0.0f // top
+        0.5f, 0.5f, 0.0f,   // 右上角
+        0.5f, -0.5f, 0.0f,  // 右下角
+        -0.5f, -0.5f, 0.0f, // 左下角
+        -0.5f, 0.5f, 0.0f   // 左上角
+    };
+
+    // 索引数组
+    unsigned int indices[] = { // 注意索引从0开始!
+        0, 1, 3, // 第一个三角形
+        1, 2, 3  // 第二个三角形
     };
     
     // 连接顶点属性
     // 0 生成顶点缓冲对象VBO，第二个参数就是缓存区独一无二的ID
-    unsigned int VBO, VAO;
+    unsigned int VBO, VAO, EBO;
     glGenBuffers(1, &VBO);
     glGenVertexArrays(1, &VAO);
+    glGenBuffers(1, &EBO);
     // 绑定VAO对象
     glBindVertexArray(VAO);
     
@@ -130,6 +138,9 @@ int main(int argc, const char * argv[]) {
     // 将顶点数据复制到缓存内存中：第4个参数是表示如果管理给定的顶点数据。一共有3种类型：GL_STATIC_DRAW：不变，GL_DYNAMIC_DRAW:动态的；GL_STREAM_DRAW：每次绘制都会改变
     glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
     
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
+    glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
+    
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void *)0); // 设置顶点属性指针
     glEnableVertexAttribArray(0); // 启用顶点属性
     
@@ -137,7 +148,9 @@ int main(int argc, const char * argv[]) {
     glBindBuffer(GL_ARRAY_BUFFER, 0);
     glBindVertexArray(0);
     
-
+    // 设置绘制模式：线框——GL_LINE，填充——GL_FILL
+    glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+    
     while (!glfwWindowShouldClose(window)) {
         
         observerInput(window);
@@ -148,7 +161,8 @@ int main(int argc, const char * argv[]) {
         // 激活 相当于将顶点数据发送给GPU了
         glUseProgram(shaderProgram);
         glBindVertexArray(VAO);
-        glDrawArrays(GL_TRIANGLES, 0, 3);
+//        glDrawArrays(GL_TRIANGLES, 0, 6); //
+        glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
     
         glfwSwapBuffers(window); // 交换缓存
         glfwPollEvents(); // 事件检测
@@ -157,6 +171,7 @@ int main(int argc, const char * argv[]) {
     // 取消资源分配
     glDeleteVertexArrays(1, &VAO);
     glDeleteBuffers(1, &VBO);
+    glDeleteBuffers(1, &EBO);
     glDeleteProgram(shaderProgram);
     
     glfwTerminate();
