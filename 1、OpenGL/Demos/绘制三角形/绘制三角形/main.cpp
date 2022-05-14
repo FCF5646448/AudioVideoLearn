@@ -179,7 +179,7 @@ int main(int argc, const char * argv[]) {
     glBindVertexArray(0);
     
     // 设置绘制模式：线框——GL_LINE，填充——GL_FILL
-    glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+    glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
     
     while (!glfwWindowShouldClose(window)) {
         
