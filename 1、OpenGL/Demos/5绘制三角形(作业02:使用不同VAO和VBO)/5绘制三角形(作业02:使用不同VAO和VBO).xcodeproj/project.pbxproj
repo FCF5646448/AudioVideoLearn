@@ -10,6 +10,7 @@
 		31CB889028312B5D00DF146E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 31CB888F28312B5D00DF146E /* main.cpp */; };
 		31CB889828312C0700DF146E /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31CB889728312C0700DF146E /* OpenGL.framework */; };
 		31CB889A28312C1A00DF146E /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 31CB889928312C1A00DF146E /* libglfw.3.3.dylib */; };
+		31CB889C28312C8D00DF146E /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = 31CB889B28312C8D00DF146E /* glad.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,7 @@
 		31CB888F28312B5D00DF146E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		31CB889728312C0700DF146E /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		31CB889928312C1A00DF146E /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../../../../../../usr/local/Cellar/glfw/3.3.4/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
+		31CB889B28312C8D00DF146E /* glad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = glad.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 		31CB888E28312B5D00DF146E /* 5绘制三角形(作业02:使用不同VAO和VBO) */ = {
 			isa = PBXGroup;
 			children = (
+				31CB889B28312C8D00DF146E /* glad.c */,
 				31CB888F28312B5D00DF146E /* main.cpp */,
 			);
 			path = "5绘制三角形(作业02:使用不同VAO和VBO)";
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				31CB889028312B5D00DF146E /* main.cpp in Sources */,
+				31CB889C28312C8D00DF146E /* glad.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
