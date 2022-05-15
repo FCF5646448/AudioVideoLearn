@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		319C16B827F5273700E447D6 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 319C16B727F5273700E447D6 /* main.cpp */; };
-		319C16C027F5289900E447D6 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 319C16BF27F5289900E447D6 /* OpenGL.framework */; };
-		319C16C227F5291000E447D6 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 319C16C127F5291000E447D6 /* libglfw.3.3.dylib */; };
-		319C16C427F5296A00E447D6 /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = 319C16C327F5296A00E447D6 /* glad.c */; };
+		31932E58282FA9BC00A3B580 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 31932E57282FA9BC00A3B580 /* main.cpp */; };
+		31932E60282FAAF600A3B580 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31932E5F282FAAF600A3B580 /* OpenGL.framework */; };
+		31932E62282FAB2500A3B580 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 31932E61282FAB2500A3B580 /* libglfw.3.3.dylib */; };
+		31932E64282FAB5100A3B580 /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = 31932E63282FAB5100A3B580 /* glad.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		319C16B227F5273700E447D6 /* CopyFiles */ = {
+		31932E52282FA9BC00A3B580 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -26,57 +26,57 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		319C16B427F5273700E447D6 /* 绘制三角形 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "绘制三角形"; sourceTree = BUILT_PRODUCTS_DIR; };
-		319C16B727F5273700E447D6 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		319C16BF27F5289900E447D6 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
-		319C16C127F5291000E447D6 /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../../../../../../usr/local/Cellar/glfw/3.3.4/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
-		319C16C327F5296A00E447D6 /* glad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = glad.c; sourceTree = "<group>"; };
+		31932E54282FA9BC00A3B580 /* 绘制三角形 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "绘制三角形"; sourceTree = BUILT_PRODUCTS_DIR; };
+		31932E57282FA9BC00A3B580 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		31932E5F282FAAF600A3B580 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		31932E61282FAB2500A3B580 /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../../../../../../usr/local/Cellar/glfw/3.3.4/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
+		31932E63282FAB5100A3B580 /* glad.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = glad.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		319C16B127F5273700E447D6 /* Frameworks */ = {
+		31932E51282FA9BC00A3B580 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				319C16C227F5291000E447D6 /* libglfw.3.3.dylib in Frameworks */,
-				319C16C027F5289900E447D6 /* OpenGL.framework in Frameworks */,
+				31932E62282FAB2500A3B580 /* libglfw.3.3.dylib in Frameworks */,
+				31932E60282FAAF600A3B580 /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		319C16AB27F5273700E447D6 = {
+		31932E4B282FA9BB00A3B580 = {
 			isa = PBXGroup;
 			children = (
-				319C16B627F5273700E447D6 /* 绘制三角形 */,
-				319C16B527F5273700E447D6 /* Products */,
-				319C16BE27F5289900E447D6 /* Frameworks */,
+				31932E56282FA9BC00A3B580 /* 绘制三角形 */,
+				31932E55282FA9BC00A3B580 /* Products */,
+				31932E5E282FAAF600A3B580 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		319C16B527F5273700E447D6 /* Products */ = {
+		31932E55282FA9BC00A3B580 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				319C16B427F5273700E447D6 /* 绘制三角形 */,
+				31932E54282FA9BC00A3B580 /* 绘制三角形 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		319C16B627F5273700E447D6 /* 绘制三角形 */ = {
+		31932E56282FA9BC00A3B580 /* 绘制三角形 */ = {
 			isa = PBXGroup;
 			children = (
-				319C16C327F5296A00E447D6 /* glad.c */,
-				319C16B727F5273700E447D6 /* main.cpp */,
+				31932E63282FAB5100A3B580 /* glad.c */,
+				31932E57282FA9BC00A3B580 /* main.cpp */,
 			);
 			path = "绘制三角形";
 			sourceTree = "<group>";
 		};
-		319C16BE27F5289900E447D6 /* Frameworks */ = {
+		31932E5E282FAAF600A3B580 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				319C16C127F5291000E447D6 /* libglfw.3.3.dylib */,
-				319C16BF27F5289900E447D6 /* OpenGL.framework */,
+				31932E61282FAB2500A3B580 /* libglfw.3.3.dylib */,
+				31932E5F282FAAF600A3B580 /* OpenGL.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -84,38 +84,38 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		319C16B327F5273700E447D6 /* 绘制三角形 */ = {
+		31932E53282FA9BC00A3B580 /* 绘制三角形 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 319C16BB27F5273700E447D6 /* Build configuration list for PBXNativeTarget "绘制三角形" */;
+			buildConfigurationList = 31932E5B282FA9BC00A3B580 /* Build configuration list for PBXNativeTarget "绘制三角形" */;
 			buildPhases = (
-				319C16B027F5273700E447D6 /* Sources */,
-				319C16B127F5273700E447D6 /* Frameworks */,
-				319C16B227F5273700E447D6 /* CopyFiles */,
+				31932E50282FA9BC00A3B580 /* Sources */,
+				31932E51282FA9BC00A3B580 /* Frameworks */,
+				31932E52282FA9BC00A3B580 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "绘制三角形";
-			productName = "绘制三角形";
-			productReference = 319C16B427F5273700E447D6 /* 绘制三角形 */;
+			productName = "绘制三角形01（VBO）";
+			productReference = 31932E54282FA9BC00A3B580 /* 绘制三角形 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		319C16AC27F5273700E447D6 /* Project object */ = {
+		31932E4C282FA9BB00A3B580 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1330;
 				TargetAttributes = {
-					319C16B327F5273700E447D6 = {
+					31932E53282FA9BC00A3B580 = {
 						CreatedOnToolsVersion = 13.3;
 					};
 				};
 			};
-			buildConfigurationList = 319C16AF27F5273700E447D6 /* Build configuration list for PBXProject "绘制三角形" */;
+			buildConfigurationList = 31932E4F282FA9BB00A3B580 /* Build configuration list for PBXProject "绘制三角形" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -123,30 +123,30 @@
 				en,
 				Base,
 			);
-			mainGroup = 319C16AB27F5273700E447D6;
-			productRefGroup = 319C16B527F5273700E447D6 /* Products */;
+			mainGroup = 31932E4B282FA9BB00A3B580;
+			productRefGroup = 31932E55282FA9BC00A3B580 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				319C16B327F5273700E447D6 /* 绘制三角形 */,
+				31932E53282FA9BC00A3B580 /* 绘制三角形 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		319C16B027F5273700E447D6 /* Sources */ = {
+		31932E50282FA9BC00A3B580 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				319C16B827F5273700E447D6 /* main.cpp in Sources */,
-				319C16C427F5296A00E447D6 /* glad.c in Sources */,
+				31932E58282FA9BC00A3B580 /* main.cpp in Sources */,
+				31932E64282FAB5100A3B580 /* glad.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		319C16B927F5273700E447D6 /* Debug */ = {
+		31932E59282FA9BC00A3B580 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -204,7 +204,7 @@
 			};
 			name = Debug;
 		};
-		319C16BA27F5273700E447D6 /* Release */ = {
+		31932E5A282FA9BC00A3B580 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -255,7 +255,7 @@
 			};
 			name = Release;
 		};
-		319C16BC27F5273700E447D6 /* Debug */ = {
+		31932E5C282FA9BC00A3B580 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -265,13 +265,14 @@
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(glfw_lib)",
+					/usr/local/Cellar/glfw/3.3.4./lib,
 					/usr/local/Cellar/glfw/3.3.4/lib,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		319C16BD27F5273700E447D6 /* Release */ = {
+		31932E5D282FA9BC00A3B580 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -281,6 +282,7 @@
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(glfw_lib)",
+					/usr/local/Cellar/glfw/3.3.4./lib,
 					/usr/local/Cellar/glfw/3.3.4/lib,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -290,25 +292,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		319C16AF27F5273700E447D6 /* Build configuration list for PBXProject "绘制三角形" */ = {
+		31932E4F282FA9BB00A3B580 /* Build configuration list for PBXProject "绘制三角形" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				319C16B927F5273700E447D6 /* Debug */,
-				319C16BA27F5273700E447D6 /* Release */,
+				31932E59282FA9BC00A3B580 /* Debug */,
+				31932E5A282FA9BC00A3B580 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		319C16BB27F5273700E447D6 /* Build configuration list for PBXNativeTarget "绘制三角形" */ = {
+		31932E5B282FA9BC00A3B580 /* Build configuration list for PBXNativeTarget "绘制三角形" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				319C16BC27F5273700E447D6 /* Debug */,
-				319C16BD27F5273700E447D6 /* Release */,
+				31932E5C282FA9BC00A3B580 /* Debug */,
+				31932E5D282FA9BC00A3B580 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 319C16AC27F5273700E447D6 /* Project object */;
+	rootObject = 31932E4C282FA9BB00A3B580 /* Project object */;
 }

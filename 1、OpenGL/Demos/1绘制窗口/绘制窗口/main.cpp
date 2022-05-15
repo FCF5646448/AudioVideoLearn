@@ -22,7 +22,7 @@ int main(int argc, char * argv[]) {
     glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE); //Mac 系统的特殊配置
     
     // 创建窗口：宽、高、窗口名称
-    GLFWwindow *window = glfwCreateWindow(800, 600, "LearnOpenGL", NULL, NULL);
+    GLFWwindow *window = glfwCreateWindow(800, 600, "绘制窗口", NULL, NULL);
     if (window == NULL) {
         printf("Failed to create GLFW window");
         glfwTerminate(); // 关闭所有资源

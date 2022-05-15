@@ -26,7 +26,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		3111F4EB26C8C0AC00F9733F /* OpenGL001 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OpenGL001; sourceTree = BUILT_PRODUCTS_DIR; };
+		3111F4EB26C8C0AC00F9733F /* 绘制窗口 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "绘制窗口"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3111F4EE26C8C0AC00F9733F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		3111F4F626C8C39D00F9733F /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		3111F4F826C8C4B300F9733F /* libglfw.3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libglfw.3.3.dylib; path = ../../../../../../../../usr/local/Cellar/glfw/3.3.4/lib/libglfw.3.3.dylib; sourceTree = "<group>"; };
@@ -49,7 +49,7 @@
 		3111F4E226C8C0AC00F9733F = {
 			isa = PBXGroup;
 			children = (
-				3111F4ED26C8C0AC00F9733F /* OpenGL001 */,
+				3111F4ED26C8C0AC00F9733F /* 绘制窗口 */,
 				3111F4EC26C8C0AC00F9733F /* Products */,
 				3111F4F526C8C39D00F9733F /* Frameworks */,
 			);
@@ -58,18 +58,18 @@
 		3111F4EC26C8C0AC00F9733F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3111F4EB26C8C0AC00F9733F /* OpenGL001 */,
+				3111F4EB26C8C0AC00F9733F /* 绘制窗口 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3111F4ED26C8C0AC00F9733F /* OpenGL001 */ = {
+		3111F4ED26C8C0AC00F9733F /* 绘制窗口 */ = {
 			isa = PBXGroup;
 			children = (
 				3111F4FA26C8C4ED00F9733F /* glad.c */,
 				3111F4EE26C8C0AC00F9733F /* main.cpp */,
 			);
-			path = OpenGL001;
+			path = "绘制窗口";
 			sourceTree = "<group>";
 		};
 		3111F4F526C8C39D00F9733F /* Frameworks */ = {
@@ -84,9 +84,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3111F4EA26C8C0AC00F9733F /* OpenGL001 */ = {
+		3111F4EA26C8C0AC00F9733F /* 绘制窗口 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3111F4F226C8C0AC00F9733F /* Build configuration list for PBXNativeTarget "OpenGL001" */;
+			buildConfigurationList = 3111F4F226C8C0AC00F9733F /* Build configuration list for PBXNativeTarget "绘制窗口" */;
 			buildPhases = (
 				3111F4E726C8C0AC00F9733F /* Sources */,
 				3111F4E826C8C0AC00F9733F /* Frameworks */,
@@ -96,9 +96,9 @@
 			);
 			dependencies = (
 			);
-			name = OpenGL001;
+			name = "绘制窗口";
 			productName = OpenGL001;
-			productReference = 3111F4EB26C8C0AC00F9733F /* OpenGL001 */;
+			productReference = 3111F4EB26C8C0AC00F9733F /* 绘制窗口 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -114,7 +114,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3111F4E626C8C0AC00F9733F /* Build configuration list for PBXProject "OpenGL001" */;
+			buildConfigurationList = 3111F4E626C8C0AC00F9733F /* Build configuration list for PBXProject "绘制窗口" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -127,7 +127,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3111F4EA26C8C0AC00F9733F /* OpenGL001 */,
+				3111F4EA26C8C0AC00F9733F /* 绘制窗口 */,
 			);
 		};
 /* End PBXProject section */
@@ -285,7 +285,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3111F4E626C8C0AC00F9733F /* Build configuration list for PBXProject "OpenGL001" */ = {
+		3111F4E626C8C0AC00F9733F /* Build configuration list for PBXProject "绘制窗口" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3111F4F026C8C0AC00F9733F /* Debug */,
@@ -294,7 +294,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3111F4F226C8C0AC00F9733F /* Build configuration list for PBXNativeTarget "OpenGL001" */ = {
+		3111F4F226C8C0AC00F9733F /* Build configuration list for PBXNativeTarget "绘制窗口" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3111F4F326C8C0AC00F9733F /* Debug */,
