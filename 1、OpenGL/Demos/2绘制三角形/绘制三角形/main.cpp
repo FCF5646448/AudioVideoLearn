@@ -175,7 +175,7 @@ int main(int argc, const char * argv[]) {
     }
     
     glDeleteBuffers(1, &VBO);
-    glDeleteProgram(shaderProgram);
+    glDeleteBuffers(1, &VAO);
     
     glfwTerminate();
     return 0;
