@@ -26,6 +26,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		31AC975E283DA34900CE2102 /* Shader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Shader.h; sourceTree = "<group>"; };
+		31AC975F283DA9FE00CE2102 /* 3.3shader.vs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 3.3shader.vs; sourceTree = "<group>"; };
+		31AC9760283DAA1A00CE2102 /* 3.3shader.fs */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = 3.3shader.fs; sourceTree = "<group>"; };
 		31BF0D21283C5B350023123B /* 10着色器(工具类的使用) */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "10着色器(工具类的使用)"; sourceTree = BUILT_PRODUCTS_DIR; };
 		31BF0D24283C5B350023123B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		31BF0D2C283C5B860023123B /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
@@ -68,6 +71,9 @@
 			children = (
 				31BF0D30283C5BB50023123B /* glad.c */,
 				31BF0D24283C5B350023123B /* main.cpp */,
+				31AC975E283DA34900CE2102 /* Shader.h */,
+				31AC975F283DA9FE00CE2102 /* 3.3shader.vs */,
+				31AC9760283DAA1A00CE2102 /* 3.3shader.fs */,
 			);
 			path = "10着色器(工具类的使用)";
 			sourceTree = "<group>";

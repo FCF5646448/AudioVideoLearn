@@ -9,28 +9,10 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 
+#include "Shader.h"
+
 void observerWindowFrameChanged(GLFWwindow* window, int width, int height);
 void observerInput(GLFWwindow * window);
-
-// glsl 着色器源码: 顶点着色器
-const char * vertexShaderSource = "#version 330 core\n"
-    "layout (location = 0) in vec3 aPos;\n" // vec3 是一种类型，表示3个参数的向量。location应该是表示从哪个点开始绘制
-    "layout (location = 1) in vec3 aColor;\n"
-    "out vec3 outColor;\n"
-    "void main()\n"
-    "{\n"
-    "   gl_Position = vec4(aPos, 1.0);\n"
-    "   outColor = aColor;\n"
-    "}\n";
-// GLSL 片段着色器
-const char *fragmentShaderSource = "#version 330 core\n"
-    "out vec4 FragColor;\n"
-    "in vec3 outColor;\n"
-    "void main()\n"
-    "{\n"
-    "   FragColor = vec4(outColor, 1.0);\n"
-    "}\n";
-
 
 int main(int argc, const char * argv[]) {
     
@@ -50,22 +32,7 @@ int main(int argc, const char * argv[]) {
     gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
     
     // --------------------------------------------------------
-    unsigned int vertexShader, fragmentShader, shaderProgram;
-    vertexShader = glCreateShader(GL_VERTEX_SHADER);
-    glShaderSource(vertexShader, 1, &vertexShaderSource, NULL);
-    glCompileShader(vertexShader);
-    
-    fragmentShader = glCreateShader(GL_FRAGMENT_SHADER);
-    glShaderSource(fragmentShader, 1, &fragmentShaderSource, NULL);
-    glCompileShader(fragmentShader);
-    
-    shaderProgram = glCreateProgram();
-    glAttachShader(shaderProgram, vertexShader);
-    glAttachShader(shaderProgram, fragmentShader);
-    glLinkProgram(shaderProgram);
-    
-    glDeleteShader(vertexShader);
-    glDeleteShader(fragmentShader);
+    Shader ourShader("3.3.shader.vs", "3.3.shader.fs");
     
     // --------------------------------------------------------
     float vertices[] = {
@@ -79,9 +46,8 @@ int main(int argc, const char * argv[]) {
     glGenBuffers(1, &VBO);
     glGenVertexArrays(1, &VAO);
     
-    glBindBuffer(GL_ARRAY_BUFFER, VBO);
     glBindVertexArray(VAO);
-    
+    glBindBuffer(GL_ARRAY_BUFFER, VBO);
     glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
     
     // 读取位置数据
@@ -92,8 +58,6 @@ int main(int argc, const char * argv[]) {
     glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void *)(3 * sizeof(float)));
     glEnableVertexAttribArray(1);
     
-    glBindBuffer(GL_ARRAY_BUFFER, 0);
-    glBindVertexArray(0);
     
     while (!glfwWindowShouldClose(window)) {
         observerInput(window);
@@ -101,14 +65,17 @@ int main(int argc, const char * argv[]) {
         glClearColor(0.2f, 0.3f, 0.3f, 0.3f);
         glClear(GL_COLOR_BUFFER_BIT);
         
+        ourShader.use();
         
-        glUseProgram(shaderProgram);
         glBindVertexArray(VAO);
         glDrawArrays(GL_TRIANGLES, 0, 3);
         
         glfwSwapBuffers(window);
         glfwPollEvents();
     }
+    
+    glDeleteVertexArrays(1, &VAO);
+    glDeleteBuffers(1, &VBO);
     
     glfwTerminate();
     return 0;
